@@ -32,31 +32,14 @@
 </head>
 <body class="bg-parchment text-charcoal font-sans min-h-screen flex flex-col justify-between p-4 md:p-8">
 
-  <!-- Top Navigation & Header -->
-  <header class="max-w-3xl w-full mx-auto flex flex-wrap justify-between items-center pb-6 border-b border-stone-300 gap-3">
+  <!-- Minimal Header: NO filter dropdowns -->
+  <header class="max-w-2xl w-full mx-auto flex justify-between items-center pb-6 border-b border-stone-300">
     <div class="flex items-center gap-2">
       <span class="text-2xl">📖</span>
       <div>
         <h1 class="font-serif font-bold text-xl md:text-2xl tracking-tight text-slateNavy">Son of Man Trivia</h1>
-        <p class="text-xs text-stone-500 hidden sm:block">BibleProject Podcast Trivia Deck</p>
+        <p class="text-xs text-stone-500">BibleProject Podcast Trivia Deck</p>
       </div>
-    </div>
-    
-    <!-- Episode Filter Dropdown -->
-    <div class="flex items-center gap-2">
-      <label for="episodeFilter" class="text-xs font-semibold uppercase text-stone-500 hidden sm:inline">Episode:</label>
-      <select id="episodeFilter" onchange="handleFilterChange()" class="bg-white border border-stone-300 text-stone-800 text-xs md:text-sm font-medium rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-terracotta">
-        <option value="ALL">All Episodes (96 Clues)</option>
-        <option value="1">Episode 1</option>
-        <option value="2">Episode 2</option>
-        <option value="3">Episode 3</option>
-        <option value="4">Episode 4</option>
-        <option value="5">Episode 5</option>
-        <option value="6">Episode 6</option>
-        <option value="7">Episode 7</option>
-        <option value="8">Episode 8</option>
-        <option value="BOOKMARKS">⭐ Bookmarked Clues</option>
-      </select>
     </div>
   </header>
 
@@ -64,7 +47,7 @@
   <main class="max-w-2xl w-full mx-auto my-auto py-6">
     <div class="bg-white rounded-2xl shadow-sm border border-stone-200 p-6 md:p-8 transition-all duration-300">
       
-      <!-- Question Meta Header: NOTE - Series Name is OMITTED from card header -->
+      <!-- Question Meta Header: NOTE - Series Name is OMITTED from prompt stem -->
       <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-wider text-stone-500 mb-6">
         <div class="flex items-center gap-2">
           <span id="badgeEpisode" class="px-3 py-1 bg-stone-100 text-stone-700 rounded-full">Episode --</span>
@@ -72,7 +55,7 @@
             ⭐ <span id="bookmarkText" class="text-xs font-normal">Bookmark</span>
           </button>
         </div>
-        <span id="badgeIndex">Question 1 of --</span>
+        <span id="badgeIndex">Question 1 of 96</span>
       </div>
 
       <!-- Clue Prompt Stem -->
@@ -170,7 +153,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="max-w-3xl w-full mx-auto text-center pt-6 border-t border-stone-300 text-xs text-stone-500 flex justify-between items-center">
+  <footer class="max-w-2xl w-full mx-auto text-center pt-6 border-t border-stone-300 text-xs text-stone-500 flex justify-between items-center">
     <span>BibleProject Trivia • Son of Man Series</span>
     <span id="reviewedCount">Reviewed: 0</span>
   </footer>
@@ -178,7 +161,6 @@
   <!-- Application Logic -->
   <script>
     let allQuestions = [];
-    let currentDeck = [];
     let currentIndex = 0;
     let isRevealed = false;
 
@@ -204,7 +186,6 @@
       try {
         const res = await fetch('data/questions.json');
         allQuestions = await res.json();
-        currentDeck = [...allQuestions];
         updateReviewedCount();
         renderQuestion();
       } catch (err) {
@@ -219,21 +200,14 @@
     }
 
     function renderQuestion() {
-      if (currentDeck.length === 0) {
-        document.getElementById('clueText').innerText = "No questions in this episode deck.";
-        document.getElementById('badgeEpisode').innerText = "Empty";
-        document.getElementById('badgeIndex').innerText = "0 of 0";
-        document.getElementById('revealSection').classList.add('hidden');
-        document.getElementById('solutionView').classList.add('hidden');
-        return;
-      }
+      if (allQuestions.length === 0) return;
 
-      const q = currentDeck[currentIndex];
+      const q = allQuestions[currentIndex];
       isRevealed = false;
 
-      // Update Header Badges: Series Name is OMITTED
+      // Update Header Badges
       document.getElementById('badgeEpisode').innerText = `Episode ${q.episode}`;
-      document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${currentDeck.length}`;
+      document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${allQuestions.length}`;
 
       // Bookmark Status
       const bookmarks = getBookmarks();
@@ -257,8 +231,8 @@
     }
 
     function revealAnswer() {
-      if (currentDeck.length === 0) return;
-      const q = currentDeck[currentIndex];
+      if (allQuestions.length === 0) return;
+      const q = allQuestions[currentIndex];
       isRevealed = true;
 
       // Clean Markdown
@@ -281,8 +255,8 @@
     }
 
     function toggleBookmark() {
-      if (currentDeck.length === 0) return;
-      const q = currentDeck[currentIndex];
+      if (allQuestions.length === 0) return;
+      const q = allQuestions[currentIndex];
       let bookmarks = getBookmarks();
       if (bookmarks.includes(q.id)) {
         bookmarks = bookmarks.filter(id => id !== q.id);
@@ -290,11 +264,6 @@
         bookmarks.push(q.id);
       }
       localStorage.setItem(LS_BOOKMARKS, JSON.stringify(bookmarks));
-      
-      if (document.getElementById('episodeFilter').value === 'BOOKMARKS') {
-        currentDeck = allQuestions.filter(item => bookmarks.includes(item.id));
-        if (currentIndex >= currentDeck.length) currentIndex = Math.max(0, currentDeck.length - 1);
-      }
       renderQuestion();
     }
 
@@ -310,36 +279,22 @@
       }
     }
 
-    function handleFilterChange() {
-      const val = document.getElementById('episodeFilter').value;
-      if (val === 'ALL') {
-        currentDeck = [...allQuestions];
-      } else if (val === 'BOOKMARKS') {
-        const bookmarks = getBookmarks();
-        currentDeck = allQuestions.filter(q => bookmarks.includes(q.id));
-      } else {
-        currentDeck = allQuestions.filter(q => q.episode === parseInt(val));
-      }
-      currentIndex = 0;
-      renderQuestion();
-    }
-
     function nextQuestion() {
-      if (currentDeck.length === 0) return;
-      currentIndex = (currentIndex + 1) % currentDeck.length;
+      if (allQuestions.length === 0) return;
+      currentIndex = (currentIndex + 1) % allQuestions.length;
       renderQuestion();
     }
 
     function prevQuestion() {
-      if (currentDeck.length === 0) return;
-      currentIndex = (currentIndex - 1 + currentDeck.length) % currentDeck.length;
+      if (allQuestions.length === 0) return;
+      currentIndex = (currentIndex - 1 + allQuestions.length) % allQuestions.length;
       renderQuestion();
     }
 
     function shuffleDeck() {
-      for (let i = currentDeck.length - 1; i > 0; i--) {
+      for (let i = allQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [currentDeck[i], currentDeck[j]] = [currentDeck[j], currentDeck[i]];
+        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
       }
       currentIndex = 0;
       renderQuestion();
@@ -347,8 +302,8 @@
 
     // Feedback State Logic & Local Storage Persistence
     function saveFeedbackData(updates) {
-      if (currentDeck.length === 0) return;
-      const q = currentDeck[currentIndex];
+      if (allQuestions.length === 0) return;
+      const q = allQuestions[currentIndex];
       const store = getFeedbackStore();
       store[q.id] = { ...(store[q.id] || {}), ...updates, timestamp: new Date().toISOString() };
       localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
