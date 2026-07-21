@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BibleProject Trivia</title>
+  <title>Son of Man Trivia • BibleProject</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Inter & Cinzel -->
@@ -37,19 +37,24 @@
     <div class="flex items-center gap-2">
       <span class="text-2xl">📖</span>
       <div>
-        <h1 class="font-serif font-bold text-xl md:text-2xl tracking-tight text-slateNavy">BibleProject Trivia</h1>
-        <p class="text-xs text-stone-500 hidden sm:block">Grounded in Podcast Transcripts</p>
+        <h1 class="font-serif font-bold text-xl md:text-2xl tracking-tight text-slateNavy">Son of Man Trivia</h1>
+        <p class="text-xs text-stone-500 hidden sm:block">BibleProject Podcast Trivia Deck</p>
       </div>
     </div>
     
-    <!-- Filter Controls -->
+    <!-- Episode Filter Dropdown -->
     <div class="flex items-center gap-2">
-      <label for="episodeFilter" class="text-xs font-semibold uppercase text-stone-500 hidden sm:inline">Deck:</label>
+      <label for="episodeFilter" class="text-xs font-semibold uppercase text-stone-500 hidden sm:inline">Episode:</label>
       <select id="episodeFilter" onchange="handleFilterChange()" class="bg-white border border-stone-300 text-stone-800 text-xs md:text-sm font-medium rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-terracotta">
-        <option value="ALL">All Series & Episodes (202)</option>
-        <option value="Son of Man">Son of Man Series</option>
-        <option value="Apocalyptic Letters">Apocalyptic Letters Series</option>
-        <option value="Ruakh / Holy Spirit">Holy Spirit Series</option>
+        <option value="ALL">All Episodes (96 Clues)</option>
+        <option value="1">Episode 1</option>
+        <option value="2">Episode 2</option>
+        <option value="3">Episode 3</option>
+        <option value="4">Episode 4</option>
+        <option value="5">Episode 5</option>
+        <option value="6">Episode 6</option>
+        <option value="7">Episode 7</option>
+        <option value="8">Episode 8</option>
         <option value="BOOKMARKS">⭐ Bookmarked Clues</option>
       </select>
     </div>
@@ -59,7 +64,7 @@
   <main class="max-w-2xl w-full mx-auto my-auto py-6">
     <div class="bg-white rounded-2xl shadow-sm border border-stone-200 p-6 md:p-8 transition-all duration-300">
       
-      <!-- Question Meta Header -->
+      <!-- Question Meta Header: NOTE - Series Name is OMITTED from card header -->
       <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-wider text-stone-500 mb-6">
         <div class="flex items-center gap-2">
           <span id="badgeEpisode" class="px-3 py-1 bg-stone-100 text-stone-700 rounded-full">Episode --</span>
@@ -73,7 +78,7 @@
       <!-- Clue Prompt Stem -->
       <div class="mb-6">
         <p id="clueText" class="text-lg md:text-xl font-serif leading-relaxed text-charcoal">
-          Loading trivia questions...
+          Loading Son of Man trivia...
         </p>
       </div>
 
@@ -105,7 +110,7 @@
 
         <!-- Series Source UNVEILED HERE -->
         <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl text-xs md:text-sm text-stone-800">
-          <p>🎧 <strong>Source Series:</strong> <span id="solutionSeries" class="font-semibold text-terracotta">--</span> (<span id="solutionEpisode">--</span>)</p>
+          <p>🎧 <strong>Source Series:</strong> <span id="solutionSeries" class="font-semibold text-terracotta">Son of Man</span> (<span id="solutionEpisode">--</span>)</p>
           <p class="mt-1">📜 <strong>Scripture Reference:</strong> <span id="solutionScripture" class="font-semibold">--</span></p>
         </div>
 
@@ -166,7 +171,7 @@
 
   <!-- Footer -->
   <footer class="max-w-3xl w-full mx-auto text-center pt-6 border-t border-stone-300 text-xs text-stone-500 flex justify-between items-center">
-    <span>BibleProject Trivia • Grounded in Podcast Transcripts</span>
+    <span>BibleProject Trivia • Son of Man Series</span>
     <span id="reviewedCount">Reviewed: 0</span>
   </footer>
 
@@ -178,9 +183,9 @@
     let isRevealed = false;
 
     // LocalStorage Keys
-    const LS_BOOKMARKS = 'bp_trivia_bookmarks';
-    const LS_REVIEWED = 'bp_trivia_reviewed';
-    const LS_FEEDBACK = 'bp_trivia_feedback';
+    const LS_BOOKMARKS = 'bp_som_bookmarks';
+    const LS_REVIEWED = 'bp_som_reviewed';
+    const LS_FEEDBACK = 'bp_som_feedback';
 
     function getBookmarks() {
       return JSON.parse(localStorage.getItem(LS_BOOKMARKS) || '[]');
@@ -194,7 +199,7 @@
       return JSON.parse(localStorage.getItem(LS_FEEDBACK) || '{}');
     }
 
-    // Load dataset from data/questions.json (GitHub Pages compatible relative path)
+    // Load dataset from data/questions.json
     async function init() {
       try {
         const res = await fetch('data/questions.json');
@@ -215,7 +220,7 @@
 
     function renderQuestion() {
       if (currentDeck.length === 0) {
-        document.getElementById('clueText').innerText = "No questions in this deck.";
+        document.getElementById('clueText').innerText = "No questions in this episode deck.";
         document.getElementById('badgeEpisode').innerText = "Empty";
         document.getElementById('badgeIndex').innerText = "0 of 0";
         document.getElementById('revealSection').classList.add('hidden');
@@ -259,7 +264,7 @@
       // Clean Markdown
       const cleanAnswer = q.answer.replace(/\*\*/g, '');
       document.getElementById('solutionAnswer').innerText = cleanAnswer;
-      document.getElementById('solutionSeries').innerText = q.series;
+      document.getElementById('solutionSeries').innerText = q.series || "Son of Man";
       document.getElementById('solutionEpisode').innerText = `Episode ${q.episode}`;
       document.getElementById('solutionScripture').innerText = q.scriptureRef || "N/A";
 
@@ -286,7 +291,6 @@
       }
       localStorage.setItem(LS_BOOKMARKS, JSON.stringify(bookmarks));
       
-      // If currently on Bookmarks filter, update deck
       if (document.getElementById('episodeFilter').value === 'BOOKMARKS') {
         currentDeck = allQuestions.filter(item => bookmarks.includes(item.id));
         if (currentIndex >= currentDeck.length) currentIndex = Math.max(0, currentDeck.length - 1);
@@ -314,7 +318,7 @@
         const bookmarks = getBookmarks();
         currentDeck = allQuestions.filter(q => bookmarks.includes(q.id));
       } else {
-        currentDeck = allQuestions.filter(q => q.series === val);
+        currentDeck = allQuestions.filter(q => q.episode === parseInt(val));
       }
       currentIndex = 0;
       renderQuestion();
