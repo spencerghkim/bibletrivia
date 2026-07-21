@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BibleProject Trivia</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: '#F9F6F0',
+            charcoal: '#1A1A1A',
+            slateNavy: '#2C3E50',
+            terracotta: '#C85A17',
+            accentGold: '#D4AF37'
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-parchment text-charcoal font-sans min-h-screen flex flex-col justify-between p-4 md:p-8">
+
+  <!-- Top Navigation & Header -->
+  <header class="max-w-3xl w-full mx-auto flex flex-wrap justify-between items-center pb-6 border-b border-stone-300 gap-3">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl">📖</span>
+      <div>
+        <h1 class="font-serif font-bold text-xl md:text-2xl tracking-tight text-slateNavy">BibleProject Trivia</h1>
+        <p class="text-xs text-stone-500 hidden sm:block">Grounded in Podcast Transcripts</p>
+      </div>
+    </div>
+    
+    <!-- Filter Controls -->
+    <div class="flex items-center gap-2">
+      <label for="episodeFilter" class="text-xs font-semibold uppercase text-stone-500 hidden sm:inline">Deck:</label>
+      <select id="episodeFilter" onchange="handleFilterChange()" class="bg-white border border-stone-300 text-stone-800 text-xs md:text-sm font-medium rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-terracotta">
+        <option value="ALL">All Series & Episodes (202)</option>
+        <option value="Son of Man">Son of Man Series</option>
+        <option value="Apocalyptic Letters">Apocalyptic Letters Series</option>
+        <option value="Ruakh / Holy Spirit">Holy Spirit Series</option>
+        <option value="BOOKMARKS">⭐ Bookmarked Clues</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Main Question Card Container -->
+  <main class="max-w-2xl w-full mx-auto my-auto py-6">
+    <div class="bg-white rounded-2xl shadow-sm border border-stone-200 p-6 md:p-8 transition-all duration-300">
+      
+      <!-- Question Meta Header -->
+      <div class="flex justify-between items-center text-xs font-semibold uppercase tracking-wider text-stone-500 mb-6">
+        <div class="flex items-center gap-2">
+          <span id="badgeEpisode" class="px-3 py-1 bg-stone-100 text-stone-700 rounded-full">Episode --</span>
+          <button onclick="toggleBookmark()" id="btnBookmark" class="hover:text-amber-600 focus:outline-none text-stone-400 transition" title="Bookmark Question">
+            ⭐ <span id="bookmarkText" class="text-xs font-normal">Bookmark</span>
+          </button>
+        </div>
+        <span id="badgeIndex">Question 1 of --</span>
+      </div>
+
+      <!-- Clue Prompt Stem -->
+      <div class="mb-6">
+        <p id="clueText" class="text-lg md:text-xl font-serif leading-relaxed text-charcoal">
+          Loading trivia questions...
+        </p>
+      </div>
+
+      <!-- Optional Scripture Hint Accordion -->
+      <div class="mb-6">
+        <button onclick="toggleHint()" id="hintBtn" class="text-xs font-semibold text-terracotta hover:underline flex items-center gap-1 focus:outline-none">
+          💡 <span>Show Scripture Hint</span>
+        </button>
+        <div id="hintContent" class="hidden mt-2 p-3 bg-stone-50 border border-stone-200 rounded-lg text-xs text-stone-700">
+          <strong>Scripture Hint:</strong> <span id="hintRefText">--</span>
+        </div>
+      </div>
+
+      <!-- Primary Action: Reveal Answer Button -->
+      <div id="revealSection" class="text-center my-4">
+        <button onclick="revealAnswer()" class="w-full sm:w-auto px-8 py-3.5 bg-slateNavy hover:bg-stone-800 text-white font-semibold rounded-xl shadow transition transform active:scale-95 flex items-center justify-center gap-2 mx-auto">
+          <span>🔓</span>
+          <span>REVEAL ANSWER</span>
+          <span class="text-xs opacity-60 font-normal ml-2 sm:inline hidden">(Spacebar)</span>
+        </button>
+      </div>
+
+      <!-- Revealed Solution View -->
+      <div id="solutionView" class="hidden mt-6 pt-6 border-t border-stone-200 animate-fade-in space-y-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-terracotta">Answer:</span>
+          <h3 id="solutionAnswer" class="text-xl md:text-2xl font-bold text-charcoal mt-1">--</h3>
+        </div>
+
+        <!-- Series Source UNVEILED HERE -->
+        <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl text-xs md:text-sm text-stone-800">
+          <p>🎧 <strong>Source Series:</strong> <span id="solutionSeries" class="font-semibold text-terracotta">--</span> (<span id="solutionEpisode">--</span>)</p>
+          <p class="mt-1">📜 <strong>Scripture Reference:</strong> <span id="solutionScripture" class="font-semibold">--</span></p>
+        </div>
+
+        <!-- Multi-Row Feedback Widget -->
+        <div id="feedbackWidget" class="p-4 bg-stone-50 rounded-xl border border-stone-200 text-left space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-stone-500">Feedback & Rating</h4>
+
+          <!-- Row 1: Quality Reaction -->
+          <div>
+            <label class="text-xs font-medium text-stone-700 block mb-1.5">1. Was this clue clear & accurate?</label>
+            <div class="flex gap-2">
+              <button onclick="setQuality('good')" id="btnGood" class="px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300 hover:bg-emerald-50 hover:border-emerald-300 transition">👍 Good</button>
+              <button onclick="setQuality('needs_work')" id="btnNeedsWork" class="px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300 hover:bg-amber-50 hover:border-amber-300 transition">👎 Needs Work</button>
+              <button onclick="setQuality('flag_issue')" id="btnFlag" class="px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300 hover:bg-rose-50 hover:border-rose-300 transition">🚩 Flag Issue</button>
+            </div>
+          </div>
+
+          <!-- Row 2: 1-5 Difficulty Scale -->
+          <div>
+            <label class="text-xs font-medium text-stone-700 block mb-1.5">2. How difficult was this clue? (1 = Easy, 5 = Hard)</label>
+            <div class="flex items-center gap-1.5">
+              <button onclick="setDifficulty(1)" class="diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white hover:bg-stone-100">1</button>
+              <button onclick="setDifficulty(2)" class="diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white hover:bg-stone-100">2</button>
+              <button onclick="setDifficulty(3)" class="diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white hover:bg-stone-100">3</button>
+              <button onclick="setDifficulty(4)" class="diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white hover:bg-stone-100">4</button>
+              <button onclick="setDifficulty(5)" class="diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white hover:bg-stone-100">5</button>
+            </div>
+          </div>
+
+          <!-- Row 3: Optional Text Comment -->
+          <div>
+            <input type="text" id="feedbackComment" onchange="saveComment()" placeholder="Optional suggestion or correction..." class="w-full text-xs p-2 bg-white border border-stone-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-terracotta">
+          </div>
+
+          <div id="feedbackSubmittedMsg" class="hidden text-xs text-emerald-700 font-semibold">✓ Feedback saved locally. Thank you!</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="flex justify-between items-center mt-6">
+      <button onclick="prevQuestion()" class="px-4 py-2 text-xs md:text-sm font-semibold text-stone-600 hover:text-charcoal bg-white border border-stone-300 rounded-lg shadow-sm hover:bg-stone-50 transition">
+        ⬅️ Previous
+      </button>
+
+      <button onclick="shuffleDeck()" class="px-3 py-2 text-xs font-medium text-stone-500 hover:text-stone-800">
+        🎲 Shuffle
+      </button>
+
+      <button onclick="nextQuestion()" class="px-5 py-2.5 text-xs md:text-sm font-semibold text-white bg-terracotta hover:bg-amber-700 rounded-lg shadow transition flex items-center gap-1">
+        <span>NEXT QUESTION</span>
+        <span>➔</span>
+        <span class="text-xs opacity-60 font-normal ml-1 sm:inline hidden">(Right Arrow)</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-3xl w-full mx-auto text-center pt-6 border-t border-stone-300 text-xs text-stone-500 flex justify-between items-center">
+    <span>BibleProject Trivia • Grounded in Podcast Transcripts</span>
+    <span id="reviewedCount">Reviewed: 0</span>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    let allQuestions = [];
+    let currentDeck = [];
+    let currentIndex = 0;
+    let isRevealed = false;
+
+    // LocalStorage Keys
+    const LS_BOOKMARKS = 'bp_trivia_bookmarks';
+    const LS_REVIEWED = 'bp_trivia_reviewed';
+    const LS_FEEDBACK = 'bp_trivia_feedback';
+
+    function getBookmarks() {
+      return JSON.parse(localStorage.getItem(LS_BOOKMARKS) || '[]');
+    }
+
+    function getReviewed() {
+      return JSON.parse(localStorage.getItem(LS_REVIEWED) || '[]');
+    }
+
+    function getFeedbackStore() {
+      return JSON.parse(localStorage.getItem(LS_FEEDBACK) || '{}');
+    }
+
+    // Load dataset from data/questions.json (GitHub Pages compatible relative path)
+    async function init() {
+      try {
+        const res = await fetch('data/questions.json');
+        allQuestions = await res.json();
+        currentDeck = [...allQuestions];
+        updateReviewedCount();
+        renderQuestion();
+      } catch (err) {
+        console.error("Failed to load questions:", err);
+        document.getElementById('clueText').innerText = "Failed to load trivia questions.";
+      }
+    }
+
+    function updateReviewedCount() {
+      const reviewed = getReviewed();
+      document.getElementById('reviewedCount').innerText = `Reviewed: ${reviewed.length} / ${allQuestions.length}`;
+    }
+
+    function renderQuestion() {
+      if (currentDeck.length === 0) {
+        document.getElementById('clueText').innerText = "No questions in this deck.";
+        document.getElementById('badgeEpisode').innerText = "Empty";
+        document.getElementById('badgeIndex').innerText = "0 of 0";
+        document.getElementById('revealSection').classList.add('hidden');
+        document.getElementById('solutionView').classList.add('hidden');
+        return;
+      }
+
+      const q = currentDeck[currentIndex];
+      isRevealed = false;
+
+      // Update Header Badges: Series Name is OMITTED
+      document.getElementById('badgeEpisode').innerText = `Episode ${q.episode}`;
+      document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${currentDeck.length}`;
+
+      // Bookmark Status
+      const bookmarks = getBookmarks();
+      const isBookmarked = bookmarks.includes(q.id);
+      document.getElementById('btnBookmark').className = isBookmarked ? 'text-amber-500 font-bold focus:outline-none transition' : 'text-stone-400 hover:text-amber-600 focus:outline-none transition';
+      document.getElementById('bookmarkText').innerText = isBookmarked ? 'Bookmarked' : 'Bookmark';
+
+      // Prompt & Hint
+      document.getElementById('clueText').innerText = q.clue;
+      document.getElementById('hintContent').classList.add('hidden');
+      document.getElementById('hintRefText').innerText = q.scriptureRef || "N/A";
+      document.getElementById('hintBtn').innerText = "💡 Show Scripture Hint";
+
+      // Reset Reveal & Solution
+      document.getElementById('revealSection').classList.remove('hidden');
+      document.getElementById('solutionView').classList.add('hidden');
+      document.getElementById('feedbackSubmittedMsg').classList.add('hidden');
+
+      // Load existing saved feedback for this question if available
+      loadSavedFeedback(q.id);
+    }
+
+    function revealAnswer() {
+      if (currentDeck.length === 0) return;
+      const q = currentDeck[currentIndex];
+      isRevealed = true;
+
+      // Clean Markdown
+      const cleanAnswer = q.answer.replace(/\*\*/g, '');
+      document.getElementById('solutionAnswer').innerText = cleanAnswer;
+      document.getElementById('solutionSeries').innerText = q.series;
+      document.getElementById('solutionEpisode').innerText = `Episode ${q.episode}`;
+      document.getElementById('solutionScripture').innerText = q.scriptureRef || "N/A";
+
+      document.getElementById('revealSection').classList.add('hidden');
+      document.getElementById('solutionView').classList.remove('hidden');
+
+      // Track Reviewed
+      const reviewed = getReviewed();
+      if (!reviewed.includes(q.id)) {
+        reviewed.push(q.id);
+        localStorage.setItem(LS_REVIEWED, JSON.stringify(reviewed));
+        updateReviewedCount();
+      }
+    }
+
+    function toggleBookmark() {
+      if (currentDeck.length === 0) return;
+      const q = currentDeck[currentIndex];
+      let bookmarks = getBookmarks();
+      if (bookmarks.includes(q.id)) {
+        bookmarks = bookmarks.filter(id => id !== q.id);
+      } else {
+        bookmarks.push(q.id);
+      }
+      localStorage.setItem(LS_BOOKMARKS, JSON.stringify(bookmarks));
+      
+      // If currently on Bookmarks filter, update deck
+      if (document.getElementById('episodeFilter').value === 'BOOKMARKS') {
+        currentDeck = allQuestions.filter(item => bookmarks.includes(item.id));
+        if (currentIndex >= currentDeck.length) currentIndex = Math.max(0, currentDeck.length - 1);
+      }
+      renderQuestion();
+    }
+
+    function toggleHint() {
+      const content = document.getElementById('hintContent');
+      const btn = document.getElementById('hintBtn');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        btn.innerText = "💡 Hide Scripture Hint";
+      } else {
+        content.classList.add('hidden');
+        btn.innerText = "💡 Show Scripture Hint";
+      }
+    }
+
+    function handleFilterChange() {
+      const val = document.getElementById('episodeFilter').value;
+      if (val === 'ALL') {
+        currentDeck = [...allQuestions];
+      } else if (val === 'BOOKMARKS') {
+        const bookmarks = getBookmarks();
+        currentDeck = allQuestions.filter(q => bookmarks.includes(q.id));
+      } else {
+        currentDeck = allQuestions.filter(q => q.series === val);
+      }
+      currentIndex = 0;
+      renderQuestion();
+    }
+
+    function nextQuestion() {
+      if (currentDeck.length === 0) return;
+      currentIndex = (currentIndex + 1) % currentDeck.length;
+      renderQuestion();
+    }
+
+    function prevQuestion() {
+      if (currentDeck.length === 0) return;
+      currentIndex = (currentIndex - 1 + currentDeck.length) % currentDeck.length;
+      renderQuestion();
+    }
+
+    function shuffleDeck() {
+      for (let i = currentDeck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [currentDeck[i], currentDeck[j]] = [currentDeck[j], currentDeck[i]];
+      }
+      currentIndex = 0;
+      renderQuestion();
+    }
+
+    // Feedback State Logic & Local Storage Persistence
+    function saveFeedbackData(updates) {
+      if (currentDeck.length === 0) return;
+      const q = currentDeck[currentIndex];
+      const store = getFeedbackStore();
+      store[q.id] = { ...(store[q.id] || {}), ...updates, timestamp: new Date().toISOString() };
+      localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
+      document.getElementById('feedbackSubmittedMsg').classList.remove('hidden');
+    }
+
+    function setQuality(val) {
+      saveFeedbackData({ quality: val });
+      updateQualityUI(val);
+    }
+
+    function setDifficulty(level) {
+      saveFeedbackData({ difficulty: level });
+      updateDifficultyUI(level);
+    }
+
+    function saveComment() {
+      const text = document.getElementById('feedbackComment').value;
+      if (text.trim()) {
+        saveFeedbackData({ comment: text.trim() });
+      }
+    }
+
+    function updateQualityUI(val) {
+      document.getElementById('btnGood').className = val === 'good' ? 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-emerald-100 border-emerald-400 text-emerald-900' : 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300';
+      document.getElementById('btnNeedsWork').className = val === 'needs_work' ? 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-amber-100 border-amber-400 text-amber-900' : 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300';
+      document.getElementById('btnFlag').className = val === 'flag_issue' ? 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-rose-100 border-rose-400 text-rose-900' : 'px-3 py-1.5 text-xs font-semibold rounded-lg border bg-white border-stone-300';
+    }
+
+    function updateDifficultyUI(level) {
+      const btns = document.querySelectorAll('.diff-btn');
+      btns.forEach((btn, idx) => {
+        if (idx + 1 === level) {
+          btn.className = 'diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-amber-700 bg-terracotta text-white';
+        } else {
+          btn.className = 'diff-btn w-8 h-8 text-xs font-bold rounded-lg border border-stone-300 bg-white text-stone-700';
+        }
+      });
+    }
+
+    function loadSavedFeedback(qId) {
+      const store = getFeedbackStore();
+      const data = store[qId];
+      if (data) {
+        updateQualityUI(data.quality || null);
+        updateDifficultyUI(data.difficulty || null);
+        document.getElementById('feedbackComment').value = data.comment || '';
+      } else {
+        updateQualityUI(null);
+        updateDifficultyUI(null);
+        document.getElementById('feedbackComment').value = '';
+      }
+    }
+
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (!isRevealed) revealAnswer();
+      } else if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        nextQuestion();
+      } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        prevQuestion();
+      }
+    });
+
+    // Initialize app
+    init();
+  </script>
+</body>
+</html>
