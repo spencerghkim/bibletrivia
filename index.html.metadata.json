@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated fallback BibleGateway URL version to NKJV in index.html.",
-  "updatedAt":  "2026-07-21T05:48:52.161114551Z"
+  "summary":  "Fixed JS ternary syntax error on line 322 of index.html that caused the page to get stuck on Loading...",
+  "updatedAt":  "2026-07-21T05:49:53.676711744Z"
 }
