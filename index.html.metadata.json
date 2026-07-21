@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated index.html to lock the viewport on mobile devices (h-dvh, overflow-hidden), preventing vertical scrolling.",
-  "updatedAt":  "2026-07-21T04:51:49.908422956Z"
+  "summary":  "Added explicit Submit button to feedback section and configured feedback submission flow.",
+  "updatedAt":  "2026-07-21T04:53:03.917442378Z"
 }

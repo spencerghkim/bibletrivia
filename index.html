@@ -21,12 +21,12 @@
   <div class="w-full max-w-md border border-gray-300 rounded-xl p-4 sm:p-5 shadow-sm flex flex-col justify-between max-h-full overflow-hidden">
     
     <!-- Question Counter -->
-    <div class="flex justify-end text-xs font-medium text-gray-400 mb-2">
+    <div class="flex justify-end text-xs font-medium text-gray-400 mb-1">
       <span id="badgeIndex">Question 1 of 96</span>
     </div>
 
     <!-- Clue Prompt Stem Container -->
-    <div class="flex-1 flex items-center justify-center my-2 overflow-hidden min-h-[80px]">
+    <div class="flex-1 flex items-center justify-center my-1 overflow-hidden min-h-[70px]">
       <p id="clueText" class="text-base sm:text-lg text-gray-900 leading-snug font-normal text-center">
         Loading...
       </p>
@@ -40,23 +40,23 @@
     </div>
 
     <!-- Revealed Solution View -->
-    <div id="solutionView" class="hidden my-2 pt-3 border-t border-gray-200 space-y-3">
+    <div id="solutionView" class="hidden my-2 pt-2 border-t border-gray-200 space-y-2">
       <div class="text-center">
         <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Answer</span>
         <h3 id="solutionAnswer" class="text-base sm:text-lg font-bold text-gray-900 mt-0.5">--</h3>
       </div>
 
       <!-- Multi-Row Feedback Widget -->
-      <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 text-left space-y-2.5">
+      <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 text-left space-y-2">
         <h4 class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Feedback</h4>
 
         <!-- Row 1: Quality Reaction -->
         <div>
           <label class="text-[11px] text-gray-600 block mb-1">1. Was this clue clear & accurate?</label>
           <div class="flex gap-1.5">
-            <button onclick="setQuality('good')" id="btnGood" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">👍 Good</button>
-            <button onclick="setQuality('needs_work')" id="btnNeedsWork" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">👎 Work</button>
-            <button onclick="setQuality('flag_issue')" id="btnFlag" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">🚩 Flag</button>
+            <button onclick="selectQuality('good')" id="btnGood" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">👍 Good</button>
+            <button onclick="selectQuality('needs_work')" id="btnNeedsWork" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">👎 Work</button>
+            <button onclick="selectQuality('flag_issue')" id="btnFlag" class="flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300">🚩 Flag</button>
           </div>
         </div>
 
@@ -64,25 +64,31 @@
         <div>
           <label class="text-[11px] text-gray-600 block mb-1">2. How difficult was this clue?</label>
           <div class="flex justify-between items-center gap-1">
-            <button onclick="setDifficulty(1)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">1</button>
-            <button onclick="setDifficulty(2)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">2</button>
-            <button onclick="setDifficulty(3)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">3</button>
-            <button onclick="setDifficulty(4)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">4</button>
-            <button onclick="setDifficulty(5)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">5</button>
+            <button onclick="selectDifficulty(1)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">1</button>
+            <button onclick="selectDifficulty(2)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">2</button>
+            <button onclick="selectDifficulty(3)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">3</button>
+            <button onclick="selectDifficulty(4)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">4</button>
+            <button onclick="selectDifficulty(5)" class="diff-btn flex-1 h-7 text-xs font-bold rounded border border-gray-300 bg-white">5</button>
           </div>
         </div>
 
         <!-- Row 3: Optional Text Comment -->
         <div>
-          <input type="text" id="feedbackComment" onchange="saveComment()" placeholder="Optional feedback..." class="w-full text-xs p-1.5 bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
+          <input type="text" id="feedbackComment" placeholder="Optional feedback..." class="w-full text-xs p-1.5 bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
         </div>
 
-        <div id="feedbackSubmittedMsg" class="hidden text-[11px] text-green-700 font-medium">Saved.</div>
+        <!-- Explicit Submit Button & Confirmation -->
+        <div class="flex justify-between items-center pt-1">
+          <div id="feedbackSubmittedMsg" class="hidden text-[11px] text-green-700 font-medium">✓ Feedback Submitted!</div>
+          <button onclick="submitFeedback()" class="ml-auto px-4 py-1.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white text-xs font-medium rounded-md transition shadow-sm">
+            Submit
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Navigation Controls -->
-    <div class="flex justify-between items-center pt-3 border-t border-gray-100 mt-2">
+    <div class="flex justify-between items-center pt-2 border-t border-gray-100 mt-1">
       <button onclick="prevQuestion()" class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg active:bg-gray-100">
         Previous
       </button>
@@ -99,6 +105,9 @@
     let allQuestions = [];
     let currentIndex = 0;
     let isRevealed = false;
+
+    let currentQuality = null;
+    let currentDifficulty = null;
 
     const LS_FEEDBACK = 'bp_som_feedback';
 
@@ -133,6 +142,8 @@
 
       const q = allQuestions[currentIndex];
       isRevealed = false;
+      currentQuality = null;
+      currentDifficulty = null;
 
       document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${allQuestions.length}`;
       document.getElementById('clueText').innerText = q.clue;
@@ -167,30 +178,31 @@
       renderQuestion();
     }
 
-    function saveFeedbackData(updates) {
-      if (allQuestions.length === 0) return;
-      const q = allQuestions[currentIndex];
-      const store = getFeedbackStore();
-      store[q.id] = { ...(store[q.id] || {}), ...updates, timestamp: new Date().toISOString() };
-      localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
-      document.getElementById('feedbackSubmittedMsg').classList.remove('hidden');
-    }
-
-    function setQuality(val) {
-      saveFeedbackData({ quality: val });
+    function selectQuality(val) {
+      currentQuality = val;
       updateQualityUI(val);
     }
 
-    function setDifficulty(level) {
-      saveFeedbackData({ difficulty: level });
+    function selectDifficulty(level) {
+      currentDifficulty = level;
       updateDifficultyUI(level);
     }
 
-    function saveComment() {
-      const text = document.getElementById('feedbackComment').value;
-      if (text.trim()) {
-        saveFeedbackData({ comment: text.trim() });
-      }
+    function submitFeedback() {
+      if (allQuestions.length === 0) return;
+      const q = allQuestions[currentIndex];
+      const commentText = document.getElementById('feedbackComment').value.trim();
+
+      const store = getFeedbackStore();
+      store[q.id] = {
+        questionId: q.id,
+        quality: currentQuality,
+        difficulty: currentDifficulty,
+        comment: commentText,
+        timestamp: new Date().toISOString()
+      };
+      localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
+      document.getElementById('feedbackSubmittedMsg').classList.remove('hidden');
     }
 
     function updateQualityUI(val) {
@@ -214,8 +226,10 @@
       const store = getFeedbackStore();
       const data = store[qId];
       if (data) {
-        updateQualityUI(data.quality || null);
-        updateDifficultyUI(data.difficulty || null);
+        currentQuality = data.quality || null;
+        currentDifficulty = data.difficulty || null;
+        updateQualityUI(currentQuality);
+        updateDifficultyUI(currentDifficulty);
         document.getElementById('feedbackComment').value = data.comment || '';
       } else {
         updateQualityUI(null);
