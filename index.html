@@ -7,96 +7,84 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans min-h-screen flex flex-col justify-between p-4 md:p-8">
+<body class="bg-white text-gray-900 font-sans p-4 md:p-8 flex justify-center items-center min-h-screen">
 
-  <!-- Header -->
-  <header class="max-w-xl w-full mx-auto pb-4 border-b border-gray-300">
-    <h1 class="font-bold text-xl text-gray-900">Son of Man Trivia</h1>
-  </header>
+  <!-- Bare Trivia Card: NOTHING ELSE -->
+  <div class="w-full max-w-lg border border-gray-300 rounded p-6 shadow-sm">
+    
+    <!-- Question Counter -->
+    <div class="flex justify-end text-xs text-gray-500 mb-4">
+      <span id="badgeIndex">Question 1 of 96</span>
+    </div>
 
-  <!-- Main Question Card Container -->
-  <main class="max-w-xl w-full mx-auto my-auto py-6">
-    <div class="bg-white rounded-lg shadow border border-gray-200 p-6">
-      
-      <!-- Question Meta Header: Only Question Index -->
-      <div class="flex justify-end text-xs font-semibold text-gray-500 mb-4">
-        <span id="badgeIndex">Question 1 of 96</span>
+    <!-- Clue Prompt Stem -->
+    <div class="mb-6">
+      <p id="clueText" class="text-base text-gray-900 leading-relaxed font-normal">
+        Loading...
+      </p>
+    </div>
+
+    <!-- Primary Action: Reveal Answer Button -->
+    <div id="revealSection" class="my-4">
+      <button onclick="revealAnswer()" class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded">
+        REVEAL ANSWER
+      </button>
+    </div>
+
+    <!-- Revealed Solution View -->
+    <div id="solutionView" class="hidden mt-6 pt-4 border-t border-gray-200 space-y-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Answer</span>
+        <h3 id="solutionAnswer" class="text-lg font-bold text-gray-900 mt-1">--</h3>
       </div>
 
-      <!-- Clue Prompt Stem -->
-      <div class="mb-6">
-        <p id="clueText" class="text-lg text-gray-900 leading-relaxed font-normal">
-          Loading...
-        </p>
-      </div>
+      <!-- Multi-Row Feedback Widget -->
+      <div class="p-3 bg-gray-50 rounded border border-gray-200 text-left space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500">Feedback</h4>
 
-      <!-- Primary Action: Reveal Answer Button -->
-      <div id="revealSection" class="my-4">
-        <button onclick="revealAnswer()" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition">
-          REVEAL ANSWER
-        </button>
-      </div>
-
-      <!-- Revealed Solution View -->
-      <div id="solutionView" class="hidden mt-6 pt-6 border-t border-gray-200 space-y-4">
+        <!-- Row 1: Quality Reaction -->
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-gray-500">Answer</span>
-          <h3 id="solutionAnswer" class="text-xl font-bold text-gray-900 mt-1">--</h3>
+          <label class="text-xs text-gray-700 block mb-1">1. Was this clue clear & accurate?</label>
+          <div class="flex gap-2">
+            <button onclick="setQuality('good')" id="btnGood" class="px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300">👍 Good</button>
+            <button onclick="setQuality('needs_work')" id="btnNeedsWork" class="px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300">👎 Needs Work</button>
+            <button onclick="setQuality('flag_issue')" id="btnFlag" class="px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300">🚩 Flag Issue</button>
+          </div>
         </div>
 
-        <!-- Multi-Row Feedback Widget -->
-        <div class="p-4 bg-gray-50 rounded border border-gray-200 text-left space-y-4">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500">Feedback</h4>
-
-          <!-- Row 1: Quality Reaction -->
-          <div>
-            <label class="text-xs font-medium text-gray-700 block mb-1">1. Was this clue clear & accurate?</label>
-            <div class="flex gap-2">
-              <button onclick="setQuality('good')" id="btnGood" class="px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300">👍 Good</button>
-              <button onclick="setQuality('needs_work')" id="btnNeedsWork" class="px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300">👎 Needs Work</button>
-              <button onclick="setQuality('flag_issue')" id="btnFlag" class="px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300">🚩 Flag Issue</button>
-            </div>
+        <!-- Row 2: 1-5 Difficulty Scale -->
+        <div>
+          <label class="text-xs text-gray-700 block mb-1">2. How difficult was this clue? (1 = Easy, 5 = Hard)</label>
+          <div class="flex items-center gap-1.5">
+            <button onclick="setDifficulty(1)" class="diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white">1</button>
+            <button onclick="setDifficulty(2)" class="diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white">2</button>
+            <button onclick="setDifficulty(3)" class="diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white">3</button>
+            <button onclick="setDifficulty(4)" class="diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white">4</button>
+            <button onclick="setDifficulty(5)" class="diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white">5</button>
           </div>
-
-          <!-- Row 2: 1-5 Difficulty Scale -->
-          <div>
-            <label class="text-xs font-medium text-gray-700 block mb-1">2. How difficult was this clue? (1 = Easy, 5 = Hard)</label>
-            <div class="flex items-center gap-1.5">
-              <button onclick="setDifficulty(1)" class="diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white">1</button>
-              <button onclick="setDifficulty(2)" class="diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white">2</button>
-              <button onclick="setDifficulty(3)" class="diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white">3</button>
-              <button onclick="setDifficulty(4)" class="diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white">4</button>
-              <button onclick="setDifficulty(5)" class="diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white">5</button>
-            </div>
-          </div>
-
-          <!-- Row 3: Optional Text Comment -->
-          <div>
-            <input type="text" id="feedbackComment" onchange="saveComment()" placeholder="Optional feedback..." class="w-full text-xs p-2 bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
-          </div>
-
-          <div id="feedbackSubmittedMsg" class="hidden text-xs text-green-700 font-medium">Saved.</div>
         </div>
+
+        <!-- Row 3: Optional Text Comment -->
+        <div>
+          <input type="text" id="feedbackComment" onchange="saveComment()" placeholder="Optional feedback..." class="w-full text-xs p-1.5 bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500">
+        </div>
+
+        <div id="feedbackSubmittedMsg" class="hidden text-xs text-green-700 font-medium">Saved.</div>
       </div>
-
     </div>
 
     <!-- Navigation Controls -->
-    <div class="flex justify-between items-center mt-6">
-      <button onclick="prevQuestion()" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-50">
+    <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
+      <button onclick="prevQuestion()" class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded hover:bg-gray-50">
         Previous
       </button>
 
-      <button onclick="nextQuestion()" class="px-5 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded">
+      <button onclick="nextQuestion()" class="px-4 py-1.5 text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 rounded">
         Next Question
       </button>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="max-w-xl w-full mx-auto text-center pt-4 border-t border-gray-300 text-xs text-gray-500">
-    Son of Man Trivia
-  </footer>
+  </div>
 
   <!-- Application Logic -->
   <script>
@@ -153,8 +141,7 @@
       const q = allQuestions[currentIndex];
       isRevealed = true;
 
-      const cleanAnswer = q.answer.replace(/\*\*/g, '');
-      document.getElementById('solutionAnswer').innerText = cleanAnswer;
+      document.getElementById('solutionAnswer').innerText = q.answer;
 
       document.getElementById('revealSection').classList.add('hidden');
       document.getElementById('solutionView').classList.remove('hidden');
@@ -199,18 +186,18 @@
     }
 
     function updateQualityUI(val) {
-      document.getElementById('btnGood').className = val === 'good' ? 'px-3 py-1 text-xs font-medium rounded border bg-green-100 border-green-400 text-green-900' : 'px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300';
-      document.getElementById('btnNeedsWork').className = val === 'needs_work' ? 'px-3 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300';
-      document.getElementById('btnFlag').className = val === 'flag_issue' ? 'px-3 py-1 text-xs font-medium rounded border bg-red-100 border-red-400 text-red-900' : 'px-3 py-1 text-xs font-medium rounded border bg-white border-gray-300';
+      document.getElementById('btnGood').className = val === 'good' ? 'px-2.5 py-1 text-xs font-medium rounded border bg-green-100 border-green-400 text-green-900' : 'px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300';
+      document.getElementById('btnNeedsWork').className = val === 'needs_work' ? 'px-2.5 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300';
+      document.getElementById('btnFlag').className = val === 'flag_issue' ? 'px-2.5 py-1 text-xs font-medium rounded border bg-red-100 border-red-400 text-red-900' : 'px-2.5 py-1 text-xs font-medium rounded border bg-white border-gray-300';
     }
 
     function updateDifficultyUI(level) {
       const btns = document.querySelectorAll('.diff-btn');
       btns.forEach((btn, idx) => {
         if (idx + 1 === level) {
-          btn.className = 'diff-btn w-8 h-8 text-xs font-bold rounded border border-blue-600 bg-blue-600 text-white';
+          btn.className = 'diff-btn w-7 h-7 text-xs font-bold rounded border border-blue-600 bg-blue-600 text-white';
         } else {
-          btn.className = 'diff-btn w-8 h-8 text-xs font-bold rounded border border-gray-300 bg-white text-gray-700';
+          btn.className = 'diff-btn w-7 h-7 text-xs font-bold rounded border border-gray-300 bg-white text-gray-700';
         }
       });
     }
