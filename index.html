@@ -47,7 +47,7 @@
         <h3 id="solutionAnswer" class="text-base sm:text-lg font-bold text-gray-900 mt-0.5">--</h3>
       </div>
 
-      <!-- Sources Section: Episode Transcript Link & BibleGateway Passage Links -->
+      <!-- Sources Section: Episode & Inline Scripture Badges (No Newline) -->
       <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-2">
         <div>
           <strong class="text-gray-900">Source Episode:</strong> 
@@ -56,9 +56,9 @@
           </a>
         </div>
         
-        <div>
-          <strong class="text-gray-900 block mb-1">Scripture Reference(s):</strong> 
-          <div id="scriptureBadgesContainer" class="flex flex-wrap gap-1.5 items-center">
+        <div class="flex flex-wrap items-center gap-1.5">
+          <strong class="text-gray-900 shrink-0">Scripture Reference(s):</strong> 
+          <div id="scriptureBadgesContainer" class="inline-flex flex-wrap gap-1.5 items-center">
             <!-- Dynamic Buttons per reference -->
           </div>
         </div>
@@ -198,7 +198,7 @@
       // BP Podcast Transcript Link
       const epLink = document.getElementById('solutionEpisodeLink');
       epLink.innerText = `Episode ${q.episode} ↗`;
-      epLink.href = q.podcastUrl || `https://bibleproject.com/podcast/son-of-man-ep-${q.episode}/`;
+      epLink.href = q.podcastUrl || `https://bibleproject.com/podcasts/series/son-of-man-series/`;
 
       renderScriptureBadges(q);
 
@@ -318,7 +318,7 @@
     }
 
     function updateQualityUI(val) {
-      document.getElementById('btnGood').className = val === 'good' ? 'flex-1 py-1 text-xs font-medium rounded border bg-green-100 border-green-400 text-green-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
+      document.getElementById('btnGood').className = val === 'good' ? 'flex-1 py-1 text-xs font-medium rounded border bg-green-100 border-green-400 text-green-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
       document.getElementById('btnNeedsWork').className = val === 'needs_work' ? 'flex-1 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
       document.getElementById('btnFlag').className = val === 'flag_issue' ? 'flex-1 py-1 text-xs font-medium rounded border bg-red-100 border-red-400 text-red-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
     }
