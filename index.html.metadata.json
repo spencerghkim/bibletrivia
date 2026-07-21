@@ -1,4 +1,4 @@
 {
-  "summary":  "Refactored updateQualityUI in index.html to clean if/else logic, completely removing invalid ternary operators.",
-  "updatedAt":  "2026-07-21T06:12:03.502553785Z"
+  "summary":  "Added vertical scroll (overflow-y-auto max-h-[55vh]) specifically to the revealed answer card container in index.html.",
+  "updatedAt":  "2026-07-21T06:25:04.775832213Z"
 }
