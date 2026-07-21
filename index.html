@@ -40,21 +40,30 @@
     </div>
 
     <!-- Revealed Solution View -->
-    <div id="solutionView" class="hidden my-2 pt-2 border-t border-gray-200 space-y-2.5">
+    <div id="solutionView" class="hidden my-2 pt-2 border-t border-gray-200 space-y-2">
       <!-- Target Answer -->
       <div class="text-center">
         <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Answer</span>
         <h3 id="solutionAnswer" class="text-base sm:text-lg font-bold text-gray-900 mt-0.5">--</h3>
       </div>
 
-      <!-- Sources Section: Episode & Bible References -->
-      <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-1">
+      <!-- Sources Section: Episode & Interactive Clickable Scripture Reference -->
+      <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-1.5">
         <div><strong class="text-gray-900">Source Episode:</strong> <span id="solutionEpisode" class="text-gray-800">--</span></div>
-        <div><strong class="text-gray-900">Scripture Reference:</strong> <span id="solutionScripture" class="text-gray-800 font-medium">--</span></div>
+        <div>
+          <strong class="text-gray-900">Scripture Reference:</strong> 
+          <button onclick="toggleVerseQuote()" class="text-blue-600 font-semibold underline hover:text-blue-800 focus:outline-none ml-1">
+            <span id="solutionScripture">--</span> 📖
+          </button>
+        </div>
+        <!-- Clickable Verse Quote Box -->
+        <div id="verseQuoteContainer" class="hidden mt-2 p-2 bg-white rounded border border-gray-300 italic text-gray-800 text-[11px] leading-relaxed">
+          "<span id="verseQuoteText">--</span>"
+        </div>
       </div>
 
       <!-- Multi-Row Feedback Widget -->
-      <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 text-left space-y-2">
+      <div class="p-2 bg-gray-50 rounded-lg border border-gray-200 text-left space-y-2">
         <h4 class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Feedback</h4>
 
         <!-- Row 1: Quality Reaction -->
@@ -158,6 +167,7 @@
 
       document.getElementById('revealSection').classList.remove('hidden');
       document.getElementById('solutionView').classList.add('hidden');
+      document.getElementById('verseQuoteContainer').classList.add('hidden');
       document.getElementById('feedbackSubmittedMsg').classList.add('hidden');
 
       loadSavedFeedback(q.id);
@@ -171,9 +181,19 @@
       document.getElementById('solutionAnswer').innerText = q.answer;
       document.getElementById('solutionEpisode').innerText = `Episode ${q.episode}`;
       document.getElementById('solutionScripture').innerText = q.scriptureRef || "N/A";
+      document.getElementById('verseQuoteText').innerText = q.scriptureQuote || `Scripture passage grounded in ${q.scriptureRef}.`;
 
       document.getElementById('revealSection').classList.add('hidden');
       document.getElementById('solutionView').classList.remove('hidden');
+    }
+
+    function toggleVerseQuote() {
+      const container = document.getElementById('verseQuoteContainer');
+      if (container.classList.contains('hidden')) {
+        container.classList.remove('hidden');
+      } else {
+        container.classList.add('hidden');
+      }
     }
 
     function nextQuestion() {
@@ -216,7 +236,7 @@
       store[q.id] = payload;
       localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
 
-      // 2. Post to Google Sheet via URLSearchParams (CORS-friendly for Google Apps Script)
+      // 2. Post to Google Sheet via URLSearchParams
       try {
         const params = new URLSearchParams();
         params.append('questionId', q.id);

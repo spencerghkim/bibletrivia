@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated Solution View in index.html to display Source Episode and Scripture Reference metadata cleanly.",
-  "updatedAt":  "2026-07-21T05:12:30.408902657Z"
+  "summary":  "Updated index.html to make the Scripture Reference clickable/tappable, revealing the verse text inline.",
+  "updatedAt":  "2026-07-21T05:13:15.821419289Z"
 }
