@@ -110,6 +110,10 @@
     let currentDifficulty = null;
 
     const LS_FEEDBACK = 'bp_som_feedback';
+    const LS_GAS_URL = 'bp_gas_endpoint_url';
+
+    // Google Apps Script Web App Endpoint URL
+    let googleSheetEndpoint = localStorage.getItem(LS_GAS_URL) || '';
 
     function getFeedbackStore() {
       return JSON.parse(localStorage.getItem(LS_FEEDBACK) || '{}');
@@ -193,15 +197,33 @@
       const q = allQuestions[currentIndex];
       const commentText = document.getElementById('feedbackComment').value.trim();
 
-      const store = getFeedbackStore();
-      store[q.id] = {
+      const payload = {
         questionId: q.id,
         quality: currentQuality,
         difficulty: currentDifficulty,
         comment: commentText,
         timestamp: new Date().toISOString()
       };
+
+      // 1. Save to LocalStorage
+      const store = getFeedbackStore();
+      store[q.id] = payload;
       localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
+
+      // 2. Send to Google Sheet if endpoint URL configured
+      if (googleSheetEndpoint) {
+        try {
+          fetch(googleSheetEndpoint, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+        } catch (e) {
+          console.warn("Google Sheet submission error:", e);
+        }
+      }
+
       document.getElementById('feedbackSubmittedMsg').classList.remove('hidden');
     }
 
