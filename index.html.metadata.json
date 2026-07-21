@@ -1,4 +1,4 @@
 {
-  "summary":  "Removed 'Son of Man Trivia' title text completely from index.html.",
-  "updatedAt":  "2026-07-21T04:50:06.631480249Z"
+  "summary":  "Updated index.html to lock the viewport on mobile devices (h-dvh, overflow-hidden), preventing vertical scrolling.",
+  "updatedAt":  "2026-07-21T04:51:49.908422956Z"
 }
