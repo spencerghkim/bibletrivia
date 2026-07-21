@@ -7,7 +7,17 @@
     "answer": "Christ",
     "scriptureRef": "Mark 8:29, John 1:41",
     "scriptureQuote": "He said to them, \u201cBut who do you say that I am?\u201d Peter answered and said to Him, \u201cYou are the Christ.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 8:29",
+        "quote": "He said to them, \u201cBut who do you say that I am?\u201d Peter answered and said to Him, \u201cYou are the Christ.\u201d"
+      },
+      {
+        "ref": "John 1:41",
+        "quote": "He first found his own brother Simon, and said to him, \u201cWe have found the Messiah\u201d (which is translated, the Christ)."
+      }
+    ]
   },
   {
     "id": "som_ep1_c2",
@@ -17,7 +27,13 @@
     "answer": "the book of Daniel",
     "scriptureRef": "Daniel 7:13-14",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13-14",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ..."
+      }
+    ]
   },
   {
     "id": "som_ep1_c3",
@@ -27,7 +43,17 @@
     "answer": "the Sons of the Prophets",
     "scriptureRef": "2 Kings 2:3, 4:38",
     "scriptureQuote": "Now the sons of the prophets who were at Bethel came out to Elisha, and said to him, \u201cDo you know that the Lord will take away your master from over you today?\u201d And he said, \u201cYes, I know; keep silent!\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Kings 2:3",
+        "quote": "Now the sons of the prophets who were at Bethel came out to Elisha, and said to him, \u201cDo you know that the Lord will take away your master from over you today?\u201d And he said, \u201cYes, I know; keep silent!\u201d"
+      },
+      {
+        "ref": "2 Kings 4:38",
+        "quote": "And Elisha returned to Gilgal, and there was a famine in the land. Now the sons of the prophets were sitting before him; and he said to his servant, \u201cPut on the large pot, and boil stew for the sons of the prophets.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep1_c4",
@@ -37,7 +63,17 @@
     "answer": "the daughters of Jerusalem",
     "scriptureRef": "Psalm 48:11, Nehemiah 11:25",
     "scriptureQuote": "Let Mount Zion rejoice, let the daughters of Judah be glad, because of Your judgments. And at Kiriath-arba and its daughters, and at Dibon and its daughters...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Psalm 48:11",
+        "quote": "Scripture passage grounding in Psalm 48:11."
+      },
+      {
+        "ref": "Nehemiah 11:25",
+        "quote": "And as for the villages with their fields, some of the children of Judah dwelt in Kirjath Arba and its villages, Dibon and its villages, Jekabzeel and its villages;"
+      }
+    ]
   },
   {
     "id": "som_ep1_c5",
@@ -47,7 +83,17 @@
     "answer": "the Son of Man",
     "scriptureRef": "Mark 8:31, Daniel 7:13",
     "scriptureQuote": "And He began to teach them that the Son of Man must suffer many things, and be rejected by the elders and chief priests and scribes, and be killed, and after three days rise again.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 8:31",
+        "quote": "And He began to teach them that the Son of Man must suffer many things, and be rejected by the elders and chief priests and scribes, and be killed, and after three days rise again."
+      },
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      }
+    ]
   },
   {
     "id": "som_ep1_c6",
@@ -57,7 +103,13 @@
     "answer": "the high priest",
     "scriptureRef": "Mark 14:61-62",
     "scriptureQuote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d Jesus said, \u201cI am. And you will see the Son of Man sitting at the right hand of the Power, and coming with the clouds of heaven.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 14:61-62",
+        "quote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d Jesus said, \u201cI am. And you will see the Son of Man sitting at the right hand of the Power, and coming with the clouds of heaven.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep1_c7",
@@ -67,7 +119,17 @@
     "answer": "kingdoms (or empires)",
     "scriptureRef": "Daniel 7:17, 23",
     "scriptureQuote": "\u2018Those great beasts, which are four, are four kings which arise out of the earth.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:17",
+        "quote": "\u2018Those great beasts, which are four, are four kings which arise out of the earth."
+      },
+      {
+        "ref": "Daniel 23",
+        "quote": "Historical / contextual reference grounding in Daniel 23."
+      }
+    ]
   },
   {
     "id": "som_ep1_c8",
@@ -77,7 +139,17 @@
     "answer": "the Ancient of Days",
     "scriptureRef": "Daniel 7:9, 13",
     "scriptureQuote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:9",
+        "quote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;"
+      },
+      {
+        "ref": "Daniel 13",
+        "quote": "Historical / contextual reference grounding in Daniel 13."
+      }
+    ]
   },
   {
     "id": "som_ep1_c9",
@@ -87,7 +159,17 @@
     "answer": "the Holy of holies",
     "scriptureRef": "Exodus 26:33, Daniel 7:9-10",
     "scriptureQuote": "And you shall hang the veil from the clasps. Then you shall bring the ark of the Testimony in there, behind the veil. The veil shall be a divider for you between the holy place and the Most Holy.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 26:33",
+        "quote": "And you shall hang the veil from the clasps. Then you shall bring the ark of the Testimony in there, behind the veil. The veil shall be a divider for you between the holy place and the Most Holy."
+      },
+      {
+        "ref": "Daniel 7:9-10",
+        "quote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire; A fiery stream issued And came forth from before Him. A thousand thousands ministered to Him; Ten thousand times ten thousand stood bef..."
+      }
+    ]
   },
   {
     "id": "som_ep1_c10",
@@ -97,7 +179,13 @@
     "answer": "a cloud",
     "scriptureRef": "Daniel 7:13",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      }
+    ]
   },
   {
     "id": "som_ep1_c11",
@@ -107,7 +195,13 @@
     "answer": "1 Enoch (or the book of Enoch)",
     "scriptureRef": "1 Enoch 46-48",
     "scriptureQuote": "Historical / contextual reference grounding: 1 Enoch 46-48.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "1 Enoch 46-48",
+        "quote": "Historical / contextual reference grounding in 1 Enoch 46-48."
+      }
+    ]
   },
   {
     "id": "som_ep1_c12",
@@ -117,7 +211,13 @@
     "answer": "the high priest",
     "scriptureRef": "Mark 14:61",
     "scriptureQuote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 14:61",
+        "quote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep1_c13",
@@ -127,7 +227,13 @@
     "answer": "the fire",
     "scriptureRef": "Daniel 7:11",
     "scriptureQuote": "\u201cI watched then because of the sound of the pompous words which the horn was speaking; I watched till the beast was slain, and its body destroyed and given to the burning flame.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:11",
+        "quote": "\u201cI watched then because of the sound of the pompous words which the horn was speaking; I watched till the beast was slain, and its body destroyed and given to the burning flame."
+      }
+    ]
   },
   {
     "id": "som_ep1_c14",
@@ -137,7 +243,13 @@
     "answer": "the cross",
     "scriptureRef": "John 3:14",
     "scriptureQuote": "And as Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up, that whoever believes in Him should not perish but have eternal life.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "John 3:14",
+        "quote": "And as Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up, We know that we have passed from death to life, because we love the brethren. He who does not love his brother abides in death."
+      }
+    ]
   },
   {
     "id": "som_ep2_c15",
@@ -147,7 +259,17 @@
     "answer": "beasts (or animals)",
     "scriptureRef": "Genesis 1:24-26, Daniel 7:3",
     "scriptureQuote": "Then God said, \u201cLet the earth bring forth the living creature according to its kind: cattle and creeping thing and beast of the earth, each according to its kind\u201d; and it was so. And God made the beast of the earth according to its kind, cattle according to its kind, and everything that creeps on the earth according to its kind. And God saw that...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 1:24-26",
+        "quote": "Then God said, \u201cLet the earth bring forth the living creature according to its kind: cattle and creeping thing and beast of the earth, each according to its kind\u201d; and it was so. And God made the beast of the earth according to its kind, cattle according to its kind, and everything that creeps on the earth according to its kind. And God saw that..."
+      },
+      {
+        "ref": "Daniel 7:3",
+        "quote": "And four great beasts came up from the sea, each different from the other."
+      }
+    ]
   },
   {
     "id": "som_ep2_c16",
@@ -157,7 +279,13 @@
     "answer": "Daniel",
     "scriptureRef": "Daniel 7:1",
     "scriptureQuote": "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head while on his bed. Then he wrote down the dream, telling the main facts.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:1",
+        "quote": "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head while on his bed. Then he wrote down the dream, telling the main facts."
+      }
+    ]
   },
   {
     "id": "som_ep2_c17",
@@ -167,7 +295,13 @@
     "answer": "the throne",
     "scriptureRef": "Daniel 7:9",
     "scriptureQuote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:9",
+        "quote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;"
+      }
+    ]
   },
   {
     "id": "som_ep2_c18",
@@ -177,7 +311,13 @@
     "answer": "a vegetarian (or vegan) diet",
     "scriptureRef": "Genesis 1:29-30",
     "scriptureQuote": "And God said, \u201cSee, I have given you every herb that yields seed which is on the face of all the earth, and every tree whose fruit yields seed; to you it shall be for food. Also, to every beast of the earth, to every bird of the air, and to everything that creeps on the earth, in which there is life, I have given every green herb for food\u201d; and ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 1:29-30",
+        "quote": "And God said, \u201cSee, I have given you every herb that yields seed which is on the face of all the earth, and every tree whose fruit yields seed; to you it shall be for food. Also, to every beast of the earth, to every bird of the air, and to everything that creeps on the earth, in which there is life, I have given every green herb for food\u201d; and ..."
+      }
+    ]
   },
   {
     "id": "som_ep2_c19",
@@ -187,7 +327,13 @@
     "answer": "a beast (or snake/serpent)",
     "scriptureRef": "Genesis 3:1-6",
     "scriptureQuote": "Now the serpent was more cunning than any beast of the field which the Lord God had made. And he said to the woman, \u201cHas God indeed said, \u2018You shall not eat of every tree of the garden\u2019?\u201d And the woman said to the serpent, \u201cWe may eat the fruit of the trees of the garden; but of the fruit of the tree which is in the midst of the garden, God has ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 3:1-6",
+        "quote": "Now the serpent was more cunning than any beast of the field which the Lord God had made. And he said to the woman, \u201cHas God indeed said, \u2018You shall not eat of every tree of the garden\u2019?\u201d And the woman said to the serpent, \u201cWe may eat the fruit of the trees of the garden; but of the fruit of the tree which is in the midst of the garden, God has ..."
+      }
+    ]
   },
   {
     "id": "som_ep2_c20",
@@ -197,7 +343,17 @@
     "answer": "an idol",
     "scriptureRef": "Exodus 20:4, Genesis 1:27",
     "scriptureQuote": "\u201cYou shall not make for yourself a carved image\u2014any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 20:4",
+        "quote": "\u201cYou shall not make for yourself a carved image\u2014any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth;"
+      },
+      {
+        "ref": "Genesis 1:27",
+        "quote": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      }
+    ]
   },
   {
     "id": "som_ep2_c21",
@@ -207,7 +363,13 @@
     "answer": "the Son of Man",
     "scriptureRef": "Daniel 7:13-14",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13-14",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ..."
+      }
+    ]
   },
   {
     "id": "som_ep2_c22",
@@ -217,7 +379,13 @@
     "answer": "Deuteronomy",
     "scriptureRef": "Deuteronomy 17:16-17",
     "scriptureQuote": "But he shall not multiply horses for himself, nor cause the people to return to Egypt to multiply horses, for the Lord has said to you, \u2018You shall not return that way again.\u2019 Neither shall he multiply wives for himself, lest his heart turn away; nor shall he greatly multiply silver and gold for himself.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Deuteronomy 17:16-17",
+        "quote": "But he shall not multiply horses for himself, nor cause the people to return to Egypt to multiply horses, for the Lord has said to you, \u2018You shall not return that way again.\u2019 Neither shall he multiply wives for himself, lest his heart turn away; nor shall he greatly multiply silver and gold for himself."
+      }
+    ]
   },
   {
     "id": "som_ep2_c23",
@@ -227,7 +395,13 @@
     "answer": "Esau",
     "scriptureRef": "Genesis 25:29-34",
     "scriptureQuote": "Now Jacob cooked a stew; and Esau came in from the field, and he was weary. And Esau said to Jacob, \u201cPlease feed me with that same red stew, for I am weary.\u201d Therefore his name was called Edom. But Jacob said, \u201cSell me your birthright as of this day.\u201d And Esau said, \u201cLook, I am about to die; so what is this birthright to me?\u201d Then Jacob said, \u201cS...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 25:29-34",
+        "quote": "Now Jacob cooked a stew; and Esau came in from the field, and he was weary. And Esau said to Jacob, \u201cPlease feed me with that same red stew, for I am weary.\u201d Therefore his name was called Edom. But Jacob said, \u201cSell me your birthright as of this day.\u201d And Esau said, \u201cLook, I am about to die; so what is this birthright to me?\u201d Then Jacob said, \u201cS..."
+      }
+    ]
   },
   {
     "id": "som_ep2_c24",
@@ -237,7 +411,17 @@
     "answer": "agriculture (or farming)",
     "scriptureRef": "Genesis 1:28, 2:15",
     "scriptureQuote": "Then God blessed them, and God said to them, \u201cBe fruitful and multiply; fill the earth and subdue it; have dominion over the fish of the sea, over the birds of the air, and over every living thing that moves on the earth.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 1:28",
+        "quote": "Then God blessed them, and God said to them, \u201cBe fruitful and multiply; fill the earth and subdue it; have dominion over the fish of the sea, over the birds of the air, and over every living thing that moves on the earth.\u201d"
+      },
+      {
+        "ref": "Genesis 2:15",
+        "quote": "Then the Lord God took the man and put him in the garden of Eden to tend and keep it."
+      }
+    ]
   },
   {
     "id": "som_ep3_c25",
@@ -247,7 +431,13 @@
     "answer": "the Ancient of Days",
     "scriptureRef": "Daniel 7:9",
     "scriptureQuote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:9",
+        "quote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;"
+      }
+    ]
   },
   {
     "id": "som_ep3_c26",
@@ -257,7 +447,13 @@
     "answer": "the Ark of the Covenant",
     "scriptureRef": "Exodus 25:17-22",
     "scriptureQuote": "\u201cYou shall make a mercy seat of pure gold; two and a half cubits shall be its length and a cubit and a half its width. And you shall make two cherubim of gold; of hammered work you shall make them at the two ends of the mercy seat. Make one cherub at one end, and the other cherub at the other end; you shall make the cherubim at the two ends of i...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 25:17-22",
+        "quote": "\u201cYou shall make a mercy seat of pure gold; two and a half cubits shall be its length and a cubit and a half its width. And you shall make two cherubim of gold; of hammered work you shall make them at the two ends of the mercy seat. Make one cherub at one end, and the other cherub at the other end; you shall make the cherubim at the two ends of i..."
+      }
+    ]
   },
   {
     "id": "som_ep3_c27",
@@ -267,7 +463,13 @@
     "answer": "the Son of Man",
     "scriptureRef": "Daniel 7:13",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      }
+    ]
   },
   {
     "id": "som_ep3_c28",
@@ -277,7 +479,17 @@
     "answer": "Enoch",
     "scriptureRef": "Genesis 5:24, 1 Enoch 71",
     "scriptureQuote": "And Enoch walked with God; and he was not, for God took him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 5:24",
+        "quote": "And Enoch walked with God; and he was not, for God took him."
+      },
+      {
+        "ref": "1 Enoch 71",
+        "quote": "Historical / contextual reference grounding in 1 Enoch 71."
+      }
+    ]
   },
   {
     "id": "som_ep3_c29",
@@ -287,7 +499,17 @@
     "answer": "the Divine Council",
     "scriptureRef": "Psalm 82:1, Daniel 7:10",
     "scriptureQuote": "God stands in the congregation of the mighty; He judges among the gods... A fiery stream issued and came forth from before Him. A thousand thousands ministered to Him; ten thousand times ten thousand stood before Him. The court was seated, and the books were opened.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Psalm 82:1",
+        "quote": "Scripture passage grounding in Psalm 82:1."
+      },
+      {
+        "ref": "Daniel 7:10",
+        "quote": "A fiery stream issued And came forth from before Him. A thousand thousands ministered to Him; Ten thousand times ten thousand stood before Him. The court was seated, And the books were opened."
+      }
+    ]
   },
   {
     "id": "som_ep3_c30",
@@ -297,7 +519,13 @@
     "answer": "the high priest",
     "scriptureRef": "Mark 14:61-63",
     "scriptureQuote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d Jesus said, \u201cI am. And you will see the Son of Man sitting at the right hand of the Power, and coming with the clouds of heaven.\u201d Then the high priest tore his clothes and said, \u201cWhat further need do we have of w...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 14:61-63",
+        "quote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d Jesus said, \u201cI am. And you will see the Son of Man sitting at the right hand of the Power, and coming with the clouds of heaven.\u201d Then the high priest tore his clothes and said, \u201cWhat further need do we have of w..."
+      }
+    ]
   },
   {
     "id": "som_ep3_c31",
@@ -307,7 +535,13 @@
     "answer": "the cross",
     "scriptureRef": "John 12:32-33",
     "scriptureQuote": "And I, if I am lifted up from the earth, will draw all peoples to Myself.\u201d This He said, signifying by what death He would die.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "John 12:32-33",
+        "quote": "And I, if I am lifted up from the earth, will draw all peoples to Myself.\u201d This He said, signifying by what death He would die."
+      }
+    ]
   },
   {
     "id": "som_ep3_c32",
@@ -317,7 +551,13 @@
     "answer": "Daniel",
     "scriptureRef": "Daniel 7:1-3",
     "scriptureQuote": "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head while on his bed. Then he wrote down the dream, telling the main facts. Daniel spoke, saying, \u201cI saw in my vision by night, and behold, the four winds of heaven were stirring up the Great Sea. And four great beasts came up from the sea, each different fro...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:1-3",
+        "quote": "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head while on his bed. Then he wrote down the dream, telling the main facts. Daniel spoke, saying, \u201cI saw in my vision by night, and behold, the four winds of heaven were stirring up the Great Sea. And four great beasts came up from the sea, each different fro..."
+      }
+    ]
   },
   {
     "id": "som_ep3_c33",
@@ -327,7 +567,17 @@
     "answer": "Elijah and Elisha",
     "scriptureRef": "2 Kings 2:3, 4:38",
     "scriptureQuote": "Now the sons of the prophets who were at Bethel came out to Elisha, and said to him, \u201cDo you know that the Lord will take away your master from over you today?\u201d And he said, \u201cYes, I know; keep silent!\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Kings 2:3",
+        "quote": "Now the sons of the prophets who were at Bethel came out to Elisha, and said to him, \u201cDo you know that the Lord will take away your master from over you today?\u201d And he said, \u201cYes, I know; keep silent!\u201d"
+      },
+      {
+        "ref": "2 Kings 4:38",
+        "quote": "And Elisha returned to Gilgal, and there was a famine in the land. Now the sons of the prophets were sitting before him; and he said to his servant, \u201cPut on the large pot, and boil stew for the sons of the prophets.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep3_c34",
@@ -337,7 +587,13 @@
     "answer": "Peter",
     "scriptureRef": "Mark 8:29",
     "scriptureQuote": "He said to them, \u201cBut who do you say that I am?\u201d Peter answered and said to Him, \u201cYou are the Christ.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 8:29",
+        "quote": "He said to them, \u201cBut who do you say that I am?\u201d Peter answered and said to Him, \u201cYou are the Christ.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep3_c35",
@@ -347,7 +603,17 @@
     "answer": "Jerusalem",
     "scriptureRef": "Psalm 48:11, Nehemiah 11:25",
     "scriptureQuote": "Let Mount Zion rejoice, let the daughters of Judah be glad, because of Your judgments.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Psalm 48:11",
+        "quote": "Scripture passage grounding in Psalm 48:11."
+      },
+      {
+        "ref": "Nehemiah 11:25",
+        "quote": "And as for the villages with their fields, some of the children of Judah dwelt in Kirjath Arba and its villages, Dibon and its villages, Jekabzeel and its villages;"
+      }
+    ]
   },
   {
     "id": "som_ep3_c36",
@@ -357,7 +623,17 @@
     "answer": "the Son of Man",
     "scriptureRef": "Daniel 7:13, Mark 8:31",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      },
+      {
+        "ref": "Mark 8:31",
+        "quote": "And He began to teach them that the Son of Man must suffer many things, and be rejected by the elders and chief priests and scribes, and be killed, and after three days rise again."
+      }
+    ]
   },
   {
     "id": "som_ep3_c37",
@@ -367,7 +643,13 @@
     "answer": "beasts",
     "scriptureRef": "Daniel 7:3-7",
     "scriptureQuote": "And four great beasts came up from the sea, each different from the other. The first was like a lion, and had eagle\u2019s wings. I watched till its wings were plucked off; and it was lifted up from the earth and made to stand on two feet like a man, and a man\u2019s heart was given to it. \u201cAnd suddenly another beast, a second, like a bear. It was raised ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:3-7",
+        "quote": "And four great beasts came up from the sea, each different from the other. The first was like a lion, and had eagle\u2019s wings. I watched till its wings were plucked off; and it was lifted up from the earth and made to stand on two feet like a man, and a man\u2019s heart was given to it. \u201cAnd suddenly another beast, a second, like a bear. It was raised ..."
+      }
+    ]
   },
   {
     "id": "som_ep4_c38",
@@ -377,7 +659,17 @@
     "answer": "the Son of Man",
     "scriptureRef": "Daniel 7:13, Mark 10:45",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      },
+      {
+        "ref": "Mark 10:45",
+        "quote": "For even the Son of Man did not come to be served, but to serve, and to give His life a ransom for many.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep4_c39",
@@ -387,7 +679,13 @@
     "answer": "beasts",
     "scriptureRef": "Daniel 7:3-7",
     "scriptureQuote": "And four great beasts came up from the sea, each different from the other. The first was like a lion, and had eagle\u2019s wings. I watched till its wings were plucked off; and it was lifted up from the earth and made to stand on two feet like a man, and a man\u2019s heart was given to it. \u201cAnd suddenly another beast, a second, like a bear. It was raised ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:3-7",
+        "quote": "And four great beasts came up from the sea, each different from the other. The first was like a lion, and had eagle\u2019s wings. I watched till its wings were plucked off; and it was lifted up from the earth and made to stand on two feet like a man, and a man\u2019s heart was given to it. \u201cAnd suddenly another beast, a second, like a bear. It was raised ..."
+      }
+    ]
   },
   {
     "id": "som_ep4_c40",
@@ -397,7 +695,13 @@
     "answer": "Cain",
     "scriptureRef": "Genesis 4:7-8",
     "scriptureQuote": "If you do well, will you not be accepted? And if you do not do well, sin lies at the door. And its desire is for you, but you should rule over it.\u201d Now Cain talked with Abel his brother; and it came to pass, when they were in the field, that Cain rose up against Abel his brother and killed him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 4:7-8",
+        "quote": "If you do well, will you not be accepted? And if you do not do well, sin lies at the door. And its desire is for you, but you should rule over it.\u201d Now Cain talked with Abel his brother; and it came to pass, when they were in the field, that Cain rose up against Abel his brother and killed him."
+      }
+    ]
   },
   {
     "id": "som_ep4_c41",
@@ -407,7 +711,13 @@
     "answer": "Ham",
     "scriptureRef": "Genesis 9:22-25",
     "scriptureQuote": "And Ham, the father of Canaan, saw the nakedness of his father, and told his two brothers outside. But Shem and Japheth took a garment, laid it on both their shoulders, and went backward and covered the nakedness of their father. Their faces were turned away, and they did not see their father\u2019s nakedness. So Noah awoke from his wine, and knew wh...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 9:22-25",
+        "quote": "And Ham, the father of Canaan, saw the nakedness of his father, and told his two brothers outside. But Shem and Japheth took a garment, laid it on both their shoulders, and went backward and covered the nakedness of their father. Their faces were turned away, and they did not see their father\u2019s nakedness. So Noah awoke from his wine, and knew wh..."
+      }
+    ]
   },
   {
     "id": "som_ep4_c42",
@@ -417,7 +727,13 @@
     "answer": "Nimrod",
     "scriptureRef": "Genesis 10:8-10",
     "scriptureQuote": "Cush begot Nimrod; he began to be a mighty one on the earth. He was a mighty hunter before the Lord; therefore it is said, \u201cLike Nimrod the mighty hunter before the Lord.\u201d And the beginning of his kingdom was Babel, Erech, Accad, and Calneh, in the land of Shinar.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 10:8-10",
+        "quote": "Cush begot Nimrod; he began to be a mighty one on the earth. He was a mighty hunter before the Lord; therefore it is said, \u201cLike Nimrod the mighty hunter before the Lord.\u201d And the beginning of his kingdom was Babel, Erech, Accad, and Calneh, in the land of Shinar."
+      }
+    ]
   },
   {
     "id": "som_ep4_c43",
@@ -427,7 +743,13 @@
     "answer": "Ishmael",
     "scriptureRef": "Genesis 16:12",
     "scriptureQuote": "He shall be a wild man; His hand shall be against every man, And every man\u2019s hand against him. And he shall dwell in the presence of all his brethren.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 16:12",
+        "quote": "He shall be a wild man; His hand shall be against every man, And every man\u2019s hand against him. And he shall dwell in the presence of all his brethren.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep4_c44",
@@ -437,7 +759,13 @@
     "answer": "Esau",
     "scriptureRef": "Genesis 25:29-34",
     "scriptureQuote": "Now Jacob cooked a stew; and Esau came in from the field, and he was weary. And Esau said to Jacob, \u201cPlease feed me with that same red stew, for I am weary.\u201d Therefore his name was called Edom. But Jacob said, \u201cSell me your birthright as of this day.\u201d And Esau said, \u201cLook, I am about to die; so what is this birthright to me?\u201d Then Jacob said, \u201cS...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 25:29-34",
+        "quote": "Now Jacob cooked a stew; and Esau came in from the field, and he was weary. And Esau said to Jacob, \u201cPlease feed me with that same red stew, for I am weary.\u201d Therefore his name was called Edom. But Jacob said, \u201cSell me your birthright as of this day.\u201d And Esau said, \u201cLook, I am about to die; so what is this birthright to me?\u201d Then Jacob said, \u201cS..."
+      }
+    ]
   },
   {
     "id": "som_ep4_c45",
@@ -447,7 +775,13 @@
     "answer": "Jacob",
     "scriptureRef": "Genesis 25:26",
     "scriptureQuote": "Afterward his brother came out, and his hand took hold of Esau\u2019s heel; so his name was called Jacob. Isaac was sixty years old when she bore them.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 25:26",
+        "quote": "Afterward his brother came out, and his hand took hold of Esau\u2019s heel; so his name was called Jacob. Isaac was sixty years old when she bore them."
+      }
+    ]
   },
   {
     "id": "som_ep4_c46",
@@ -457,7 +791,13 @@
     "answer": "Rebecca",
     "scriptureRef": "Genesis 25:23",
     "scriptureQuote": "And the Lord said to her: \u201cTwo nations are in your womb, Two peoples shall be separated from your body; One people shall be stronger than the other, And the older shall serve the younger.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 25:23",
+        "quote": "And the Lord said to her: \u201cTwo nations are in your womb, Two peoples shall be separated from your body; One people shall be stronger than the other, And the older shall serve the younger.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep4_c47",
@@ -467,7 +807,17 @@
     "answer": "a staff",
     "scriptureRef": "Exodus 4:2-4, 7:10",
     "scriptureQuote": "So the Lord said to him, \u201cWhat is that in your hand?\u201d He said, \u201cA rod.\u201d And He said, \u201cCast it on the ground.\u201d So he cast it on the ground, and it became a serpent; and Moses fled from it. Then the Lord said to Moses, \u201cReach out your hand and take it by the tail\u201d (and he reached out his hand and caught it, and it became a rod in his hand),",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 4:2-4",
+        "quote": "So the Lord said to him, \u201cWhat is that in your hand?\u201d He said, \u201cA rod.\u201d And He said, \u201cCast it on the ground.\u201d So he cast it on the ground, and it became a serpent; and Moses fled from it. Then the Lord said to Moses, \u201cReach out your hand and take it by the tail\u201d (and he reached out his hand and caught it, and it became a rod in his hand),"
+      },
+      {
+        "ref": "Exodus 7:10",
+        "quote": "So Moses and Aaron went in to Pharaoh, and they did so, just as the Lord commanded. And Aaron cast down his rod before Pharaoh and before his servants, and it became a serpent."
+      }
+    ]
   },
   {
     "id": "som_ep4_c48",
@@ -477,7 +827,17 @@
     "answer": "Leviathan",
     "scriptureRef": "Job 41:1, Psalm 74:14",
     "scriptureQuote": "\u201cCan you draw out Leviathan with a hook, Or snare his tongue with a line which you lower?",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Job 41:1",
+        "quote": "\u201cCan you draw out Leviathan with a hook, Or snare his tongue with a line which you lower?"
+      },
+      {
+        "ref": "Psalm 74:14",
+        "quote": "Scripture passage grounding in Psalm 74:14."
+      }
+    ]
   },
   {
     "id": "som_ep4_c49",
@@ -487,7 +847,21 @@
     "answer": "Aaron",
     "scriptureRef": "Exodus 4:14-16, 7:10, 28:1",
     "scriptureQuote": "Is not Aaron the Levite your brother? I know that he can speak well... So he shall be your spokesman to the people. And he shall be as a mouth for you, and you shall be to him as God.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 4:14-16",
+        "quote": "So the anger of the Lord was kindled against Moses, and He said: \u201cIs not Aaron the Levite your brother? I know that he can speak well. And look, he is also coming out to meet you. When he sees you, he will be glad in his heart. Now you shall speak to him and put the words in his mouth. And I will be with your mouth and with his mouth, and I will..."
+      },
+      {
+        "ref": "Exodus 7:10",
+        "quote": "So Moses and Aaron went in to Pharaoh, and they did so, just as the Lord commanded. And Aaron cast down his rod before Pharaoh and before his servants, and it became a serpent."
+      },
+      {
+        "ref": "Exodus 28:1",
+        "quote": "\u201cNow take Aaron your brother, and his sons with him, from among the children of Israel, that he may minister to Me as priest, Aaron and Aaron\u2019s sons: Nadab, Abihu, Eleazar, and Ithamar."
+      }
+    ]
   },
   {
     "id": "som_ep4_c50",
@@ -497,7 +871,17 @@
     "answer": "Pharaoh",
     "scriptureRef": "Ezekiel 29:3, 32:2",
     "scriptureQuote": "Speak, and say, \u2018Thus says the Lord God: \u201cBehold, I am against you, O Pharaoh king of Egypt, O great monster who lies in the midst of his rivers, Who has said, \u2018My River is my own; I have made it for myself.\u2019",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Ezekiel 29:3",
+        "quote": "Speak, and say, \u2018Thus says the Lord God: \u201cBehold, I am against you, O Pharaoh king of Egypt, O great monster who lies in the midst of his rivers, Who has said, \u2018My River is my own; I have made it for myself.\u2019"
+      },
+      {
+        "ref": "Ezekiel 32:2",
+        "quote": "\u201cSon of man, take up a lamentation for Pharaoh king of Egypt, and say to him: \u2018You are like a young lion among the nations, And you are like a monster in the seas, Bursting forth in your rivers, Troubling the waters with your feet, And fouling their rivers."
+      }
+    ]
   },
   {
     "id": "som_ep4_c51",
@@ -507,7 +891,17 @@
     "answer": "Daniel",
     "scriptureRef": "Daniel 6:16, 7:13",
     "scriptureQuote": "So the king gave the command, and they brought Daniel and cast him into the den of lions. But the king spoke, saying to Daniel, \u201cYour God, whom you serve continually, He will deliver you.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 6:16",
+        "quote": "So the king gave the command, and they brought Daniel and cast him into the den of lions. But the king spoke, saying to Daniel, \u201cYour God, whom you serve continually, He will deliver you.\u201d"
+      },
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      }
+    ]
   },
   {
     "id": "som_ep5_c52",
@@ -517,7 +911,17 @@
     "answer": "Nebuchadnezzar",
     "scriptureRef": "2 Kings 24:10-11, Daniel 1:1-2",
     "scriptureQuote": "At that time the servants of Nebuchadnezzar king of Babylon came up against Jerusalem, and the city was besieged. And Nebuchadnezzar king of Babylon came against the city, as his servants were besieging it.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Kings 24:10-11",
+        "quote": "At that time the servants of Nebuchadnezzar king of Babylon came up against Jerusalem, and the city was besieged. And Nebuchadnezzar king of Babylon came against the city, as his servants were besieging it."
+      },
+      {
+        "ref": "Daniel 1:1-2",
+        "quote": "In the third year of the reign of Jehoiakim king of Judah, Nebuchadnezzar king of Babylon came to Jerusalem and besieged it. And the Lord gave Jehoiakim king of Judah into his hand, with some of the articles of the house of God, which he carried into the land of Shinar to the house of his god; and he brought the articles into the treasure house ..."
+      }
+    ]
   },
   {
     "id": "som_ep5_c53",
@@ -527,7 +931,17 @@
     "answer": "Shinar",
     "scriptureRef": "Genesis 11:2, Daniel 1:2",
     "scriptureQuote": "And it came to pass, as they journeyed from the east, that they found a plain in the land of Shinar, and they dwelt there.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 11:2",
+        "quote": "And it came to pass, as they journeyed from the east, that they found a plain in the land of Shinar, and they dwelt there."
+      },
+      {
+        "ref": "Daniel 1:2",
+        "quote": "And the Lord gave Jehoiakim king of Judah into his hand, with some of the articles of the house of God, which he carried into the land of Shinar to the house of his god; and he brought the articles into the treasure house of his god."
+      }
+    ]
   },
   {
     "id": "som_ep5_c54",
@@ -537,7 +951,17 @@
     "answer": "Nineveh",
     "scriptureRef": "Jonah 1:2, Nahum 1:1",
     "scriptureQuote": "\u201cArise, go to Nineveh, that great city, and cry out against it; for their wickedness has come up before Me.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Jonah 1:2",
+        "quote": "\u201cArise, go to Nineveh, that great city, and cry out against it; for their wickedness has come up before Me.\u201d"
+      },
+      {
+        "ref": "Nahum 1:1",
+        "quote": "The burden against Nineveh. The book of the vision of Nahum the Elkoshite."
+      }
+    ]
   },
   {
     "id": "som_ep5_c55",
@@ -547,7 +971,17 @@
     "answer": "the Persian Empire",
     "scriptureRef": "Ezra 1:1-3, 2 Chronicles 36:22",
     "scriptureQuote": "Now in the first year of Cyrus king of Persia, that the word of the Lord by the mouth of Jeremiah might be fulfilled, the Lord stirred up the spirit of Cyrus king of Persia, so that he made a proclamation throughout all his kingdom, and also put it in writing, saying, Thus says Cyrus king of Persia: All the kingdoms of the earth the Lord God of ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Ezra 1:1-3",
+        "quote": "Now in the first year of Cyrus king of Persia, that the word of the Lord by the mouth of Jeremiah might be fulfilled, the Lord stirred up the spirit of Cyrus king of Persia, so that he made a proclamation throughout all his kingdom, and also put it in writing, saying, Thus says Cyrus king of Persia: All the kingdoms of the earth the Lord God of ..."
+      },
+      {
+        "ref": "2 Chronicles 36:22",
+        "quote": "Now in the first year of Cyrus king of Persia, that the word of the Lord by the mouth of Jeremiah might be fulfilled, the Lord stirred up the spirit of Cyrus king of Persia, so that he made a proclamation throughout all his kingdom, and also put it in writing, saying,"
+      }
+    ]
   },
   {
     "id": "som_ep5_c56",
@@ -557,7 +991,17 @@
     "answer": "a cosmic mountain",
     "scriptureRef": "Daniel 2:35, 44-45",
     "scriptureQuote": "Then the iron, the clay, the bronze, the silver, and the gold were crushed together, and became like chaff from the summer threshing floors; the wind carried them away so that no trace of them was found. And the stone that struck the image became a great mountain and filled the whole earth.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 2:35",
+        "quote": "Then the iron, the clay, the bronze, the silver, and the gold were crushed together, and became like chaff from the summer threshing floors; the wind carried them away so that no trace of them was found. And the stone that struck the image became a great mountain and filled the whole earth."
+      },
+      {
+        "ref": "Daniel 44-45",
+        "quote": "Historical / contextual reference grounding in Daniel 44-45."
+      }
+    ]
   },
   {
     "id": "som_ep5_c57",
@@ -567,7 +1011,13 @@
     "answer": "Shadrach, Meshach, and Abednego",
     "scriptureRef": "Daniel 3:19-27",
     "scriptureQuote": "Then Nebuchadnezzar was full of fury, and the expression on his face changed toward Shadrach, Meshach, and Abed-Nego. He spoke and commanded that they heat the furnace seven times more than it was usually heated. And he commanded certain mighty men of valor who were in his army to bind Shadrach, Meshach, and Abed-Nego, and cast them into the bur...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 3:19-27",
+        "quote": "Then Nebuchadnezzar was full of fury, and the expression on his face changed toward Shadrach, Meshach, and Abed-Nego. He spoke and commanded that they heat the furnace seven times more than it was usually heated. And he commanded certain mighty men of valor who were in his army to bind Shadrach, Meshach, and Abed-Nego, and cast them into the bur..."
+      }
+    ]
   },
   {
     "id": "som_ep5_c58",
@@ -577,7 +1027,13 @@
     "answer": "the Son of Man",
     "scriptureRef": "Daniel 7:13-14",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13-14",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him. Then to Him was given dominion and glory and a kingdom, That all peoples, nations, and languages should serve Him. His dominion is an everlasting dominion, Which shall ..."
+      }
+    ]
   },
   {
     "id": "som_ep6_c59",
@@ -587,7 +1043,17 @@
     "answer": "Belshazzar",
     "scriptureRef": "Daniel 5:1, 7:1",
     "scriptureQuote": "Belshazzar the king made a great feast for a thousand of his lords, and drank wine in the presence of the thousand.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 5:1",
+        "quote": "Belshazzar the king made a great feast for a thousand of his lords, and drank wine in the presence of the thousand."
+      },
+      {
+        "ref": "Daniel 7:1",
+        "quote": "In the first year of Belshazzar king of Babylon, Daniel had a dream and visions of his head while on his bed. Then he wrote down the dream, telling the main facts."
+      }
+    ]
   },
   {
     "id": "som_ep6_c60",
@@ -597,7 +1063,17 @@
     "answer": "kings",
     "scriptureRef": "Daniel 7:17, 24",
     "scriptureQuote": "\u2018Those great beasts, which are four, are four kings which arise out of the earth.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:17",
+        "quote": "\u2018Those great beasts, which are four, are four kings which arise out of the earth."
+      },
+      {
+        "ref": "Daniel 24",
+        "quote": "Historical / contextual reference grounding in Daniel 24."
+      }
+    ]
   },
   {
     "id": "som_ep6_c61",
@@ -607,7 +1083,17 @@
     "answer": "Baal",
     "scriptureRef": "Ugaritic KTU 1.2, Psalm 68:4",
     "scriptureQuote": "Historical / contextual reference grounding: Ugaritic KTU 1.2, Psalm 68:4.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Ugaritic KTU 1.2",
+        "quote": "Historical / contextual reference grounding in Ugaritic KTU 1.2."
+      },
+      {
+        "ref": "Psalm 68:4",
+        "quote": "Scripture passage grounding in Psalm 68:4."
+      }
+    ]
   },
   {
     "id": "som_ep6_c62",
@@ -617,7 +1103,13 @@
     "answer": "the Ancient of Days",
     "scriptureRef": "Daniel 7:9",
     "scriptureQuote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:9",
+        "quote": "\u201cI watched till thrones were put in place, And the Ancient of Days was seated; His garment was white as snow, And the hair of His head was like pure wool. His throne was a fiery flame, Its wheels a burning fire;"
+      }
+    ]
   },
   {
     "id": "som_ep6_c63",
@@ -627,7 +1119,17 @@
     "answer": "Zeus",
     "scriptureRef": "1 Maccabees 1:54, 2 Maccabees 6:2",
     "scriptureQuote": "Now the fifteenth day of the month Casleu, in the hundred forty and fifth year, they set up the abomination of desolation upon the altar, and builded idol altars throughout the cities of Juda on every side;",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "1 Maccabees 1:54",
+        "quote": "Now the fifteenth day of the month Casleu, in the hundred forty and fifth year, they set up the abomination of desolation upon the altar, and builded idol altars throughout the cities of Juda on every side;"
+      },
+      {
+        "ref": "2 Maccabees 6:2",
+        "quote": "And to pollute also the temple in Jerusalem, and to call it the temple of Jupiter Olympius; and that in Garizim, of Jupiter the Defender of strangers, as they did desire that lived in the place."
+      }
+    ]
   },
   {
     "id": "som_ep6_c64",
@@ -637,7 +1139,17 @@
     "answer": "Antiochus IV",
     "scriptureRef": "1 Maccabees 1:10-15, Daniel 8:9-12",
     "scriptureQuote": "And there came out of them a wicked root Antiochus surnamed* Epiphanes, son of Antiochus the king, who had been an hostage at Rome, and he reigned in the hundred and thirty and seventh year of the kingdom of the Greeks. In those days went there out of Israel wicked men, who persuaded many, saying, Let us go and make a covenant with the heathen t...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "1 Maccabees 1:10-15",
+        "quote": "And there came out of them a wicked root Antiochus surnamed* Epiphanes, son of Antiochus the king, who had been an hostage at Rome, and he reigned in the hundred and thirty and seventh year of the kingdom of the Greeks. In those days went there out of Israel wicked men, who persuaded many, saying, Let us go and make a covenant with the heathen t..."
+      },
+      {
+        "ref": "Daniel 8:9-12",
+        "quote": "And out of one of them came a little horn which grew exceedingly great toward the south, toward the east, and toward the Glorious Land. And it grew up to the host of heaven; and it cast down some of the host and some of the stars to the ground, and trampled them. He even exalted himself as high as the Prince of the host; and by him the daily sac..."
+      }
+    ]
   },
   {
     "id": "som_ep6_c65",
@@ -647,7 +1159,13 @@
     "answer": "the Maccabean Revolt",
     "scriptureRef": "1 Maccabees 2:1-28",
     "scriptureQuote": "In those days arose Mattathias the son of John, the son of Simeon, a priest of the sons of Joarib, from Jerusalem, and lived in Modin. And he had five sons, Joannan, called Caddis: Simon; called Thassi: Judas, who was called Maccabeus: Eleazar, called Avaran: and Jonathan, whose surname was Apphus. And when he saw the blasphemies that were commi...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "1 Maccabees 2:1-28",
+        "quote": "In those days arose Mattathias the son of John, the son of Simeon, a priest of the sons of Joarib, from Jerusalem, and lived in Modin. And he had five sons, Joannan, called Caddis: Simon; called Thassi: Judas, who was called Maccabeus: Eleazar, called Avaran: and Jonathan, whose surname was Apphus. And when he saw the blasphemies that were commi..."
+      }
+    ]
   },
   {
     "id": "som_ep6_c66",
@@ -657,7 +1175,13 @@
     "answer": "Herod",
     "scriptureRef": "Matthew 2:1-16",
     "scriptureQuote": "Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the East came to Jerusalem, saying, \u201cWhere is He who has been born King of the Jews? For we have seen His star in the East and have come to worship Him.\u201d When Herod the king heard this, he was troubled, and all Jerusalem with him. And when he had ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Matthew 2:1-16",
+        "quote": "Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the East came to Jerusalem, saying, \u201cWhere is He who has been born King of the Jews? For we have seen His star in the East and have come to worship Him.\u201d When Herod the king heard this, he was troubled, and all Jerusalem with him. And when he had ..."
+      }
+    ]
   },
   {
     "id": "som_ep6_c67",
@@ -667,7 +1191,13 @@
     "answer": "the Gospel of Mark",
     "scriptureRef": "Mark 1:12-13",
     "scriptureQuote": "Immediately the Spirit drove Him into the wilderness. And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 1:12-13",
+        "quote": "Immediately the Spirit drove Him into the wilderness. And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him."
+      }
+    ]
   },
   {
     "id": "som_ep6_c68",
@@ -677,7 +1207,17 @@
     "answer": "Paul",
     "scriptureRef": "2 Corinthians 3:18, Romans 8:30",
     "scriptureQuote": "But we all, with unveiled face, beholding as in a mirror the glory of the Lord, are being transformed into the same image from glory to glory, just as by the Spirit of the Lord.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Corinthians 3:18",
+        "quote": "But we all, with unveiled face, beholding as in a mirror the glory of the Lord, are being transformed into the same image from glory to glory, just as by the Spirit of the Lord."
+      },
+      {
+        "ref": "Romans 8:30",
+        "quote": "Moreover whom He predestined, these He also called; whom He called, these He also justified; and whom He justified, these He also glorified."
+      }
+    ]
   },
   {
     "id": "som_ep6_c69",
@@ -687,7 +1227,13 @@
     "answer": "2 Corinthians",
     "scriptureRef": "2 Corinthians 4:7",
     "scriptureQuote": "But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Corinthians 4:7",
+        "quote": "But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us."
+      }
+    ]
   },
   {
     "id": "som_ep7_c70",
@@ -697,7 +1243,17 @@
     "answer": "Alexander the Great",
     "scriptureRef": "Daniel 8:5-8, 11:3",
     "scriptureQuote": "And as I was considering, suddenly a male goat came from the west, across the surface of the whole earth, without touching the ground; and the goat had a notable horn between his eyes. Then he came to the ram that had two horns, which I had seen standing beside the river, and ran at him with furious power. And I saw him confronting the ram; he w...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 8:5-8",
+        "quote": "And as I was considering, suddenly a male goat came from the west, across the surface of the whole earth, without touching the ground; and the goat had a notable horn between his eyes. Then he came to the ram that had two horns, which I had seen standing beside the river, and ran at him with furious power. And I saw him confronting the ram; he w..."
+      },
+      {
+        "ref": "Daniel 11:3",
+        "quote": "Then a mighty king shall arise, who shall rule with great dominion, and do according to his will."
+      }
+    ]
   },
   {
     "id": "som_ep7_c71",
@@ -707,7 +1263,13 @@
     "answer": "Daniel",
     "scriptureRef": "Daniel 7:13",
     "scriptureQuote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Daniel 7:13",
+        "quote": "\u201cI was watching in the night visions, And behold, One like the Son of Man, Coming with the clouds of heaven! He came to the Ancient of Days, And they brought Him near before Him."
+      }
+    ]
   },
   {
     "id": "som_ep7_c72",
@@ -717,7 +1279,13 @@
     "answer": "Joseph",
     "scriptureRef": "Genesis 41:39-44",
     "scriptureQuote": "Then Pharaoh said to Joseph, \u201cInasmuch as God has shown you all this, there is no one as discerning and wise as you. You shall be over my house, and all my people shall be ruled according to your word; only in regard to the throne will I be greater than you.\u201d And Pharaoh said to Joseph, \u201cSee, I have set you over all the land of Egypt.\u201d Then Phar...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 41:39-44",
+        "quote": "Then Pharaoh said to Joseph, \u201cInasmuch as God has shown you all this, there is no one as discerning and wise as you. You shall be over my house, and all my people shall be ruled according to your word; only in regard to the throne will I be greater than you.\u201d And Pharaoh said to Joseph, \u201cSee, I have set you over all the land of Egypt.\u201d Then Phar..."
+      }
+    ]
   },
   {
     "id": "som_ep7_c73",
@@ -727,7 +1295,17 @@
     "answer": "manna",
     "scriptureRef": "Exodus 16:14-15, Numbers 11:7",
     "scriptureQuote": "And when the layer of dew lifted, there, on the surface of the wilderness, was a small round substance, as fine as frost on the ground. So when the children of Israel saw it, they said to one another, \u201cWhat is it?\u201d For they did not know what it was. And Moses said to them, \u201cThis is the bread which the Lord has given you to eat.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 16:14-15",
+        "quote": "And when the layer of dew lifted, there, on the surface of the wilderness, was a small round substance, as fine as frost on the ground. So when the children of Israel saw it, they said to one another, \u201cWhat is it?\u201d For they did not know what it was. And Moses said to them, \u201cThis is the bread which the Lord has given you to eat."
+      },
+      {
+        "ref": "Numbers 11:7",
+        "quote": "Now the manna was like coriander seed, and its color like the color of bdellium."
+      }
+    ]
   },
   {
     "id": "som_ep7_c74",
@@ -737,7 +1315,17 @@
     "answer": "Noah",
     "scriptureRef": "Genesis 7:7-9, 8:20-22",
     "scriptureQuote": "So Noah, with his sons, his wife, and his sons' wives, went into the ark because of the waters of the flood. Of clean beasts, of beasts that are unclean, of birds, and of everything that creeps on the earth, two by two they went into the ark to Noah...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 7:7-9",
+        "quote": "So Noah, with his sons, his wife, and his sons\u2019 wives, went into the ark because of the waters of the flood. Of clean animals, of animals that are unclean, of birds, and of everything that creeps on the earth, two by two they went into the ark to Noah, male and female, as God had commanded Noah."
+      },
+      {
+        "ref": "Genesis 8:20-22",
+        "quote": "Then Noah built an altar to the Lord, and took of every clean animal and of every clean bird, and offered burnt offerings on the altar. And the Lord smelled a soothing aroma. Then the Lord said in His heart, \u201cI will never again curse the ground for man\u2019s sake, although the imagination of man\u2019s heart is evil from his youth; nor will I again destr..."
+      }
+    ]
   },
   {
     "id": "som_ep7_c75",
@@ -747,7 +1335,13 @@
     "answer": "Jerusalem",
     "scriptureRef": "Psalm 2:6",
     "scriptureQuote": "Yet I have set My King on My holy hill of Zion.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Psalm 2:6",
+        "quote": "Scripture passage grounding in Psalm 2:6."
+      }
+    ]
   },
   {
     "id": "som_ep7_c76",
@@ -757,7 +1351,13 @@
     "answer": "Peter",
     "scriptureRef": "Matthew 16:21-23",
     "scriptureQuote": "From that time Jesus began to show to His disciples that He must go to Jerusalem, and suffer many things from the elders and chief priests and scribes, and be killed, and be raised the third day. Then Peter took Him aside and began to rebuke Him, saying, \u201cFar be it from You, Lord; this shall not happen to You!\u201d But He turned and said to Peter, \u201c...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Matthew 16:21-23",
+        "quote": "From that time Jesus began to show to His disciples that He must go to Jerusalem, and suffer many things from the elders and chief priests and scribes, and be killed, and be raised the third day. Then Peter took Him aside and began to rebuke Him, saying, \u201cFar be it from You, Lord; this shall not happen to You!\u201d But He turned and said to Peter, \u201c..."
+      }
+    ]
   },
   {
     "id": "som_ep7_c77",
@@ -767,7 +1367,17 @@
     "answer": "Egypt",
     "scriptureRef": "Exodus 12:12, 14:30",
     "scriptureQuote": "\u2018For I will pass through the land of Egypt on that night, and will strike all the firstborn in the land of Egypt, both man and beast; and against all the gods of Egypt I will execute judgment: I am the Lord.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Exodus 12:12",
+        "quote": "\u2018For I will pass through the land of Egypt on that night, and will strike all the firstborn in the land of Egypt, both man and beast; and against all the gods of Egypt I will execute judgment: I am the Lord."
+      },
+      {
+        "ref": "Exodus 14:30",
+        "quote": "So the Lord saved Israel that day out of the hand of the Egyptians, and Israel saw the Egyptians dead on the seashore."
+      }
+    ]
   },
   {
     "id": "som_ep7_c78",
@@ -777,7 +1387,13 @@
     "answer": "Abraham",
     "scriptureRef": "Genesis 22:1-18",
     "scriptureQuote": "Now it came to pass after these things that God tested Abraham, and said to him, \u201cAbraham!\u201d And he said, \u201cHere I am.\u201d Then He said, \u201cTake now your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I shall tell you.\u201d So Abraham rose early in the morning ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 22:1-18",
+        "quote": "Now it came to pass after these things that God tested Abraham, and said to him, \u201cAbraham!\u201d And he said, \u201cHere I am.\u201d Then He said, \u201cTake now your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering on one of the mountains of which I shall tell you.\u201d So Abraham rose early in the morning ..."
+      }
+    ]
   },
   {
     "id": "som_ep7_c79",
@@ -787,7 +1403,17 @@
     "answer": "the wilderness",
     "scriptureRef": "Mark 1:12-13, Matthew 4:1",
     "scriptureQuote": "Immediately the Spirit drove Him into the wilderness. And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 1:12-13",
+        "quote": "Immediately the Spirit drove Him into the wilderness. And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him."
+      },
+      {
+        "ref": "Matthew 4:1",
+        "quote": "Then Jesus was led up by the Spirit into the wilderness to be tempted by the devil."
+      }
+    ]
   },
   {
     "id": "som_ep7_c80",
@@ -797,7 +1423,17 @@
     "answer": "the angels",
     "scriptureRef": "Mark 1:13, Matthew 4:11",
     "scriptureQuote": "And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 1:13",
+        "quote": "And He was there in the wilderness forty days, tempted by Satan, and was with the wild beasts; and the angels ministered to Him."
+      },
+      {
+        "ref": "Matthew 4:11",
+        "quote": "Then the devil left Him, and behold, angels came and ministered to Him."
+      }
+    ]
   },
   {
     "id": "som_ep7_c81",
@@ -807,7 +1443,13 @@
     "answer": "Numbers",
     "scriptureRef": "Numbers 14:33-34",
     "scriptureQuote": "And your sons shall be shepherds in the wilderness forty years, and bear the brunt of your infidelity, until your carcasses are consumed in the wilderness. According to the number of the days in which you spied out the land, forty days, for each day you shall bear your guilt one year, namely forty years, and you shall know My rejection.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Numbers 14:33-34",
+        "quote": "And your sons shall be shepherds in the wilderness forty years, and bear the brunt of your infidelity, until your carcasses are consumed in the wilderness. According to the number of the days in which you spied out the land, forty days, for each day you shall bear your guilt one year, namely forty years, and you shall know My rejection."
+      }
+    ]
   },
   {
     "id": "som_ep7_c82",
@@ -817,7 +1459,13 @@
     "answer": "glory and honor",
     "scriptureRef": "Psalm 8:5",
     "scriptureQuote": "For You have made him a little lower than the angels, and You have crowned him with glory and honor.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Psalm 8:5",
+        "quote": "Scripture passage grounding in Psalm 8:5."
+      }
+    ]
   },
   {
     "id": "som_ep7_c83",
@@ -827,7 +1475,13 @@
     "answer": "the cherubim",
     "scriptureRef": "Genesis 3:24",
     "scriptureQuote": "So He drove out the man; and He placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 3:24",
+        "quote": "So He drove out the man; and He placed cherubim at the east of the garden of Eden, and a flaming sword which turned every way, to guard the way to the tree of life."
+      }
+    ]
   },
   {
     "id": "som_ep7_c84",
@@ -837,7 +1491,17 @@
     "answer": "John the Baptist",
     "scriptureRef": "Mark 1:2-4, Isaiah 40:3",
     "scriptureQuote": "As it is written in the Prophets: \u201cBehold, I send My messenger before Your face, Who will prepare Your way before You.\u201d \u201cThe voice of one crying in the wilderness: \u2018Prepare the way of the Lord; Make His paths straight.\u2019 \u201d John came baptizing in the wilderness and preaching a baptism of repentance for the remission of sins.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 1:2-4",
+        "quote": "As it is written in the Prophets: \u201cBehold, I send My messenger before Your face, Who will prepare Your way before You.\u201d \u201cThe voice of one crying in the wilderness: \u2018Prepare the way of the Lord; Make His paths straight.\u2019 \u201d John came baptizing in the wilderness and preaching a baptism of repentance for the remission of sins."
+      },
+      {
+        "ref": "Isaiah 40:3",
+        "quote": "The voice of one crying in the wilderness: \u201cPrepare the way of the Lord; Make straight in the desert A highway for our God."
+      }
+    ]
   },
   {
     "id": "som_ep7_c85",
@@ -847,7 +1511,13 @@
     "answer": "David",
     "scriptureRef": "2 Samuel 7:12-16",
     "scriptureQuote": "\u201cWhen your days are fulfilled and you rest with your fathers, I will set up your seed after you, who will come from your body, and I will establish his kingdom. He shall build a house for My name, and I will establish the throne of his kingdom forever. I will be his Father, and he shall be My son. If he commits iniquity, I will chasten him with ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "2 Samuel 7:12-16",
+        "quote": "\u201cWhen your days are fulfilled and you rest with your fathers, I will set up your seed after you, who will come from your body, and I will establish his kingdom. He shall build a house for My name, and I will establish the throne of his kingdom forever. I will be his Father, and he shall be My son. If he commits iniquity, I will chasten him with ..."
+      }
+    ]
   },
   {
     "id": "som_ep8_c86",
@@ -857,7 +1527,13 @@
     "answer": "the sword of Goliath",
     "scriptureRef": "1 Samuel 21:9",
     "scriptureQuote": "So the priest said, \u201cThe sword of Goliath the Philistine, whom you killed in the Valley of Elah, there it is, wrapped in a cloth behind the ephod. If you will take that, take it. For there is no other except that one here.\u201d And David said, \u201cThere is none like it; give it to me.\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "1 Samuel 21:9",
+        "quote": "So the priest said, \u201cThe sword of Goliath the Philistine, whom you killed in the Valley of Elah, there it is, wrapped in a cloth behind the ephod. If you will take that, take it. For there is no other except that one here.\u201d And David said, \u201cThere is none like it; give it to me.\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep8_c87",
@@ -867,7 +1543,13 @@
     "answer": "Babylon",
     "scriptureRef": "Jeremiah 25:9-12",
     "scriptureQuote": "behold, I will send and take all the families of the north,\u2019 says the Lord, \u2018and Nebuchadnezzar the king of Babylon, My servant, and will bring them against this land, against its inhabitants, and against these nations all around, and will utterly destroy them, and make them an astonishment, a hissing, and perpetual desolations. Moreover I will ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Jeremiah 25:9-12",
+        "quote": "behold, I will send and take all the families of the north,\u2019 says the Lord, \u2018and Nebuchadnezzar the king of Babylon, My servant, and will bring them against this land, against its inhabitants, and against these nations all around, and will utterly destroy them, and make them an astonishment, a hissing, and perpetual desolations. Moreover I will ..."
+      }
+    ]
   },
   {
     "id": "som_ep8_c88",
@@ -877,7 +1559,17 @@
     "answer": "the land of Uz",
     "scriptureRef": "Jeremiah 25:20, Job 1:1",
     "scriptureQuote": "all the mixed multitude, all the kings of the land of Uz, all the kings of the land of the Philistines (namely, Ashkelon, Gaza, Ekron, and the remnant of Ashdod);",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Jeremiah 25:20",
+        "quote": "all the mixed multitude, all the kings of the land of Uz, all the kings of the land of the Philistines (namely, Ashkelon, Gaza, Ekron, and the remnant of Ashdod);"
+      },
+      {
+        "ref": "Job 1:1",
+        "quote": "There was a man in the land of Uz, whose name was Job; and that man was blameless and upright, and one who feared God and shunned evil."
+      }
+    ]
   },
   {
     "id": "som_ep8_c89",
@@ -887,7 +1579,17 @@
     "answer": "Nebuchadnezzar",
     "scriptureRef": "Jeremiah 25:9, 27:6",
     "scriptureQuote": "behold, I will send and take all the families of the north,\u2019 says the Lord, \u2018and Nebuchadnezzar the king of Babylon, My servant, and will bring them against this land, against its inhabitants, and against these nations all around, and will utterly destroy them, and make them an astonishment, a hissing, and perpetual desolations.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Jeremiah 25:9",
+        "quote": "behold, I will send and take all the families of the north,\u2019 says the Lord, \u2018and Nebuchadnezzar the king of Babylon, My servant, and will bring them against this land, against its inhabitants, and against these nations all around, and will utterly destroy them, and make them an astonishment, a hissing, and perpetual desolations."
+      },
+      {
+        "ref": "Jeremiah 27:6",
+        "quote": "And now I have given all these lands into the hand of Nebuchadnezzar the king of Babylon, My servant; and the beasts of the field I have also given him to serve him."
+      }
+    ]
   },
   {
     "id": "som_ep8_c90",
@@ -897,7 +1599,13 @@
     "answer": "James and John",
     "scriptureRef": "Mark 10:35-40",
     "scriptureQuote": "Then James and John, the sons of Zebedee, came to Him, saying, \u201cTeacher, we want You to do for us whatever we ask.\u201d And He said to them, \u201cWhat do you want Me to do for you?\u201d They said to Him, \u201cGrant us that we may sit, one on Your right hand and the other on Your left, in Your glory.\u201d But Jesus said to them, \u201cYou do not know what you ask. Are yo...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 10:35-40",
+        "quote": "Then James and John, the sons of Zebedee, came to Him, saying, \u201cTeacher, we want You to do for us whatever we ask.\u201d And He said to them, \u201cWhat do you want Me to do for you?\u201d They said to Him, \u201cGrant us that we may sit, one on Your right hand and the other on Your left, in Your glory.\u201d But Jesus said to them, \u201cYou do not know what you ask. Are yo..."
+      }
+    ]
   },
   {
     "id": "som_ep8_c91",
@@ -907,7 +1615,17 @@
     "answer": "the two criminals",
     "scriptureRef": "Mark 15:27, Matthew 27:38",
     "scriptureQuote": "With Him they also crucified two robbers, one on His right and the other on His left.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 15:27",
+        "quote": "With Him they also crucified two robbers, one on His right and the other on His left."
+      },
+      {
+        "ref": "Matthew 27:38",
+        "quote": "Then two robbers were crucified with Him, one on the right and another on the left."
+      }
+    ]
   },
   {
     "id": "som_ep8_c92",
@@ -917,7 +1635,21 @@
     "answer": "Caiaphas and Pilate",
     "scriptureRef": "John 18:28-29, Mark 14:61, 15:15",
     "scriptureQuote": "Then they led Jesus from Caiaphas to the Praetorium... Pilate then went out to them and said, 'What accusation do you bring against this Man?'",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "John 18:28-29",
+        "quote": "Then they led Jesus from Caiaphas to the Praetorium, and it was early morning. But they themselves did not go into the Praetorium, lest they should be defiled, but that they might eat the Passover. Pilate then went out to them and said, \u201cWhat accusation do you bring against this Man?\u201d"
+      },
+      {
+        "ref": "Mark 14:61",
+        "quote": "But He kept silent and answered nothing. Again the high priest asked Him, saying to Him, \u201cAre You the Christ, the Son of the Blessed?\u201d"
+      },
+      {
+        "ref": "Mark 15:15",
+        "quote": "So Pilate, wanting to gratify the crowd, released Barabbas to them; and he delivered Jesus, after he had scourged Him, to be crucified."
+      }
+    ]
   },
   {
     "id": "som_ep8_c93",
@@ -927,7 +1659,13 @@
     "answer": "the religious leaders",
     "scriptureRef": "Mark 2:6-7",
     "scriptureQuote": "And some of the scribes were sitting there and reasoning in their hearts, \u201cWhy does this Man speak blasphemies like this? Who can forgive sins but God alone?\u201d",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 2:6-7",
+        "quote": "And some of the scribes were sitting there and reasoning in their hearts, \u201cWhy does this Man speak blasphemies like this? Who can forgive sins but God alone?\u201d"
+      }
+    ]
   },
   {
     "id": "som_ep8_c94",
@@ -937,7 +1675,17 @@
     "answer": "Adam",
     "scriptureRef": "Mark 2:27, Genesis 2:1-3",
     "scriptureQuote": "And He said to them, \u201cThe Sabbath was made for man, and not man for the Sabbath.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 2:27",
+        "quote": "And He said to them, \u201cThe Sabbath was made for man, and not man for the Sabbath."
+      },
+      {
+        "ref": "Genesis 2:1-3",
+        "quote": "Thus the heavens and the earth, and all the host of them, were finished. And on the seventh day God ended His work which He had done, and He rested on the seventh day from all His work which He had done. Then God blessed the seventh day and sanctified it, because in it He rested from all His work which God had created and made."
+      }
+    ]
   },
   {
     "id": "som_ep8_c95",
@@ -947,7 +1695,17 @@
     "answer": "Eden",
     "scriptureRef": "Genesis 2:8-9, Mark 2:27",
     "scriptureQuote": "The Lord God planted a garden eastward in Eden, and there He put the man whom He had formed. And out of the ground the Lord God made every tree grow that is pleasant to the sight and good for food. The tree of life was also in the midst of the garden, and the tree of the knowledge of good and evil.",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Genesis 2:8-9",
+        "quote": "The Lord God planted a garden eastward in Eden, and there He put the man whom He had formed. And out of the ground the Lord God made every tree grow that is pleasant to the sight and good for food. The tree of life was also in the midst of the garden, and the tree of the knowledge of good and evil."
+      },
+      {
+        "ref": "Mark 2:27",
+        "quote": "And He said to them, \u201cThe Sabbath was made for man, and not man for the Sabbath."
+      }
+    ]
   },
   {
     "id": "som_ep8_c96",
@@ -957,6 +1715,16 @@
     "answer": "Jerusalem",
     "scriptureRef": "Mark 10:32-34, 11:1-11",
     "scriptureQuote": "Now they were on the road, going up to Jerusalem, and Jesus was going before them; and they were amazed. And as they followed they were afraid. Then He took the twelve aside again and began to tell them the things that would happen to Him: \u201cBehold, we are going up to Jerusalem, and the Son of Man will be betrayed to the chief priests and to the ...",
-    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/"
+    "sourceUrl": "https://bibleproject.com/podcasts/son-of-man/",
+    "scriptureQuotes": [
+      {
+        "ref": "Mark 10:32-34",
+        "quote": "Now they were on the road, going up to Jerusalem, and Jesus was going before them; and they were amazed. And as they followed they were afraid. Then He took the twelve aside again and began to tell them the things that would happen to Him: \u201cBehold, we are going up to Jerusalem, and the Son of Man will be betrayed to the chief priests and to the ..."
+      },
+      {
+        "ref": "Mark 11:1-11",
+        "quote": "Now when they drew near Jerusalem, to Bethphage and Bethany, at the Mount of Olives, He sent two of His disciples; and He said to them, \u201cGo into the village opposite you; and as soon as you have entered it you will find a colt tied, on which no one has sat. Loose it and bring it. And if anyone says to you, \u2018Why are you doing this?\u2019 say, \u2018The Lor..."
+      }
+    ]
   }
 ]

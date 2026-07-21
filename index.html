@@ -47,18 +47,21 @@
         <h3 id="solutionAnswer" class="text-base sm:text-lg font-bold text-gray-900 mt-0.5">--</h3>
       </div>
 
-      <!-- Sources Section: Episode & Interactive Clickable Scripture Reference -->
-      <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-1.5">
+      <!-- Sources Section: Episode & Individual Clickable Scripture Badges -->
+      <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-2">
         <div><strong class="text-gray-900">Source Episode:</strong> <span id="solutionEpisode" class="text-gray-800">--</span></div>
+        
         <div>
-          <strong class="text-gray-900">Scripture Reference:</strong> 
-          <button onclick="toggleVerseQuote()" class="text-blue-600 font-semibold underline hover:text-blue-800 focus:outline-none ml-1">
-            <span id="solutionScripture">--</span> 📖
-          </button>
+          <strong class="text-gray-900 block mb-1">Scripture Reference(s):</strong> 
+          <div id="scriptureBadgesContainer" class="flex flex-wrap gap-1.5 items-center">
+            <!-- Dynamic Buttons per reference -->
+          </div>
         </div>
+
         <!-- Clickable Verse Quote Box -->
-        <div id="verseQuoteContainer" class="hidden mt-2 p-2 bg-white rounded border border-gray-300 italic text-gray-800 text-[11px] leading-relaxed">
-          "<span id="verseQuoteText">--</span>"
+        <div id="verseQuoteContainer" class="hidden p-2 bg-white rounded border border-gray-300 text-gray-800 text-[11px] leading-relaxed">
+          <div id="verseQuoteTitle" class="font-bold text-[10px] uppercase text-blue-700 mb-1"></div>
+          <p id="verseQuoteText" class="italic">"--"</p>
         </div>
       </div>
 
@@ -124,6 +127,7 @@
 
     let currentQuality = null;
     let currentDifficulty = null;
+    let selectedRefIndex = null;
 
     const LS_FEEDBACK = 'bp_som_feedback';
     const GOOGLE_SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxl8utOCtbfqyq9nnWuQ7GcSLsyGJSTGqtsHXzzIRPZucAHBZygJLjeQrjvUXUUq8c9Dw/exec';
@@ -161,6 +165,7 @@
       isRevealed = false;
       currentQuality = null;
       currentDifficulty = null;
+      selectedRefIndex = null;
 
       document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${allQuestions.length}`;
       document.getElementById('clueText').innerText = q.clue;
@@ -180,19 +185,57 @@
 
       document.getElementById('solutionAnswer').innerText = q.answer;
       document.getElementById('solutionEpisode').innerText = `Episode ${q.episode}`;
-      document.getElementById('solutionScripture').innerText = q.scriptureRef || "N/A";
-      document.getElementById('verseQuoteText').innerText = q.scriptureQuote || `Scripture passage grounded in ${q.scriptureRef}.`;
+      
+      renderScriptureBadges(q);
 
       document.getElementById('revealSection').classList.add('hidden');
       document.getElementById('solutionView').classList.remove('hidden');
     }
 
-    function toggleVerseQuote() {
-      const container = document.getElementById('verseQuoteContainer');
-      if (container.classList.contains('hidden')) {
-        container.classList.remove('hidden');
+    function renderScriptureBadges(q) {
+      const container = document.getElementById('scriptureBadgesContainer');
+      container.innerHTML = '';
+
+      const quotes = q.scriptureQuotes || [];
+      if (quotes.length === 0) {
+        container.innerHTML = `<span class="text-gray-500 italic">None</span>`;
+        return;
+      }
+
+      quotes.forEach((item, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.id = `refBadge_${idx}`;
+        btn.className = 'px-2 py-0.5 text-xs font-semibold rounded border bg-white border-blue-300 text-blue-600 hover:bg-blue-50 focus:outline-none transition';
+        btn.innerHTML = `${item.ref} 📖`;
+        btn.onclick = () => toggleRefQuote(idx, item.ref, item.quote);
+        container.appendChild(btn);
+      });
+    }
+
+    function toggleRefQuote(idx, refName, quoteText) {
+      const quoteBox = document.getElementById('verseQuoteContainer');
+      const titleEl = document.getElementById('verseQuoteTitle');
+      const textEl = document.getElementById('verseQuoteText');
+
+      if (selectedRefIndex === idx) {
+        // Hide
+        selectedRefIndex = null;
+        quoteBox.classList.add('hidden');
+        document.getElementById(`refBadge_${idx}`).className = 'px-2 py-0.5 text-xs font-semibold rounded border bg-white border-blue-300 text-blue-600 hover:bg-blue-50 focus:outline-none transition';
       } else {
-        container.classList.add('hidden');
+        // Reset old selected
+        if (selectedRefIndex !== null) {
+          const oldBtn = document.getElementById(`refBadge_${selectedRefIndex}`);
+          if (oldBtn) oldBtn.className = 'px-2 py-0.5 text-xs font-semibold rounded border bg-white border-blue-300 text-blue-600 hover:bg-blue-50 focus:outline-none transition';
+        }
+
+        selectedRefIndex = idx;
+        document.getElementById(`refBadge_${idx}`).className = 'px-2 py-0.5 text-xs font-semibold rounded border bg-blue-600 text-white border-blue-600 focus:outline-none transition';
+        
+        titleEl.innerText = refName;
+        textEl.innerText = `"${quoteText}"`;
+        quoteBox.classList.remove('hidden');
       }
     }
 

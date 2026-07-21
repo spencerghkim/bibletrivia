@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated index.html to make the Scripture Reference clickable/tappable, revealing the verse text inline.",
-  "updatedAt":  "2026-07-21T05:13:15.821419289Z"
+  "summary":  "Updated index.html to render each scripture reference as a separate clickable button/badge that unveils its specific verse text.",
+  "updatedAt":  "2026-07-21T05:37:13.128481562Z"
 }
