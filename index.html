@@ -68,7 +68,7 @@
           <div class="flex justify-between items-center">
             <span id="verseQuoteTitle" class="font-bold text-[10px] uppercase text-blue-700"></span>
             <a id="bibleGatewayLink" href="#" target="_blank" class="text-[10px] text-blue-600 underline font-medium hover:text-blue-800">
-              Open in BibleGateway ↗
+              Open in BibleGateway (NKJV) ↗
             </a>
           </div>
           <p id="verseQuoteText" class="italic text-gray-700">"--"</p>
@@ -251,7 +251,7 @@
         
         titleEl.innerText = refName;
         textEl.innerText = `"${quoteText}"`;
-        bgLink.href = bgUrl || `https://www.biblegateway.com/passage/?search=${encodeURIComponent(refName)}&version=NIV`;
+        bgLink.href = bgUrl || `https://www.biblegateway.com/passage/?search=${encodeURIComponent(refName)}&version=NKJV`;
         
         quoteBox.classList.remove('hidden');
       }
