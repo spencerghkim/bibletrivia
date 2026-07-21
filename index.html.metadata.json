@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated index.html with automatic deck randomization on load and cache-busting timestamp for fetching data/questions.json.",
-  "updatedAt":  "2026-07-21T04:44:58.767072529Z"
+  "summary":  "Bare-bones minimalist proof-of-concept trivia application with standard sans-serif font, no episode badges, no hints, Reveal Answer button, target answer display, 2-row feedback, and randomized Son of Man deck.",
+  "updatedAt":  "2026-07-21T04:47:45.078966445Z"
 }
