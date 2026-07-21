@@ -20,8 +20,9 @@
   <!-- Viewport-Locked Card Container -->
   <div class="w-full max-w-md border border-gray-300 rounded-xl p-4 sm:p-5 shadow-sm flex flex-col justify-between max-h-full overflow-hidden">
     
-    <!-- Question Counter -->
-    <div class="flex justify-end text-xs font-medium text-gray-400 mb-1">
+    <!-- Question Header: Question ID (Top Left) & Question Counter (Top Right) -->
+    <div class="flex justify-between items-center text-xs font-medium text-gray-400 mb-1">
+      <span id="badgeQuestionId" class="font-mono text-[11px] text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded border border-gray-200">ID: --</span>
       <span id="badgeIndex">Question 1 of 96</span>
     </div>
 
@@ -186,6 +187,7 @@
       currentDifficulty = null;
       selectedRefIndex = null;
 
+      document.getElementById('badgeQuestionId').innerText = q.id;
       document.getElementById('badgeIndex').innerText = `Question ${currentIndex + 1} of ${allQuestions.length}`;
       document.getElementById('clueText').innerText = q.clue;
 

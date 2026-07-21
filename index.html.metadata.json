@@ -1,4 +1,4 @@
 {
-  "summary":  "Added Randomize button in navigation bar, kept initial question deck un-randomized (sequential 1 to 96).",
-  "updatedAt":  "2026-07-21T05:51:11.174940799Z"
+  "summary":  "Added Question ID display to the top left of the Question Card header in index.html.",
+  "updatedAt":  "2026-07-21T05:53:22.813611969Z"
 }
