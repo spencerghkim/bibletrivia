@@ -1,4 +1,4 @@
 {
-  "summary":  "Embedded Google Apps Script Web App URL into index.html for direct submission to Google Sheet 1nMlHDEOEWFVQNkNrQbCfyWlUizR_H742LGPgajFYSOY.",
-  "updatedAt":  "2026-07-21T04:58:34.381528171Z"
+  "summary":  "Updated feedback submission in index.html to use URLSearchParams with no-cors for robust Google Apps Script e.parameter mapping.",
+  "updatedAt":  "2026-07-21T05:01:05.379038253Z"
 }

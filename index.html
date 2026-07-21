@@ -196,8 +196,8 @@
 
       const payload = {
         questionId: q.id,
-        quality: currentQuality,
-        difficulty: currentDifficulty,
+        quality: currentQuality || '',
+        difficulty: currentDifficulty || '',
         comment: commentText,
         timestamp: new Date().toISOString()
       };
@@ -207,13 +207,19 @@
       store[q.id] = payload;
       localStorage.setItem(LS_FEEDBACK, JSON.stringify(store));
 
-      // 2. Post to Google Sheet Web App Endpoint
+      // 2. Post to Google Sheet via URLSearchParams (CORS-friendly for Google Apps Script)
       try {
+        const params = new URLSearchParams();
+        params.append('questionId', q.id);
+        params.append('quality', currentQuality || 'N/A');
+        params.append('difficulty', currentDifficulty || 'N/A');
+        params.append('comment', commentText);
+
         fetch(GOOGLE_SHEET_ENDPOINT, {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: params.toString()
         });
       } catch (e) {
         console.warn("Google Sheet submission error:", e);
