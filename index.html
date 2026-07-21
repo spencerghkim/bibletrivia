@@ -330,9 +330,13 @@
     }
 
     function updateQualityUI(val) {
-      document.getElementById('btnGood').className = val === 'good' ? 'flex-1 py-1 text-xs font-medium rounded border bg-green-100 border-green-400 text-green-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
-      document.getElementById('btnNeedsWork').className = val === 'needs_work' ? 'flex-1 py-1 text-xs font-medium rounded border bg-yellow-100 border-yellow-400 text-yellow-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
-      document.getElementById('btnFlag').className = val === 'flag_issue' ? 'flex-1 py-1 text-xs font-medium rounded border bg-red-100 border-red-400 text-red-900' : 'flex-1 py-1 text-xs font-medium rounded border bg-white border-gray-300';
+      const btnGood = document.getElementById('btnGood');
+      const btnNeedsWork = document.getElementById('btnNeedsWork');
+      const btnFlag = document.getElementById('btnFlag');
+
+      btnGood.className = 'flex-1 py-1 text-xs font-medium rounded border ' + (val === 'good' ? 'bg-green-100 border-green-400 text-green-900' : 'bg-white border-gray-300');
+      btnNeedsWork.className = 'flex-1 py-1 text-xs font-medium rounded border ' + (val === 'needs_work' ? 'bg-yellow-100 border-yellow-400 text-yellow-900' : 'bg-white border-gray-300');
+      btnFlag.className = 'flex-1 py-1 text-xs font-medium rounded border ' + (val === 'flag_issue' ? 'bg-red-100 border-red-400 text-red-900' : 'bg-white border-gray-300');
     }
 
     function updateDifficultyUI(level) {
