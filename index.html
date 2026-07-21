@@ -40,10 +40,17 @@
     </div>
 
     <!-- Revealed Solution View -->
-    <div id="solutionView" class="hidden my-2 pt-2 border-t border-gray-200 space-y-2">
+    <div id="solutionView" class="hidden my-2 pt-2 border-t border-gray-200 space-y-2.5">
+      <!-- Target Answer -->
       <div class="text-center">
         <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Answer</span>
         <h3 id="solutionAnswer" class="text-base sm:text-lg font-bold text-gray-900 mt-0.5">--</h3>
+      </div>
+
+      <!-- Sources Section: Episode & Bible References -->
+      <div class="p-2.5 bg-gray-50 rounded border border-gray-200 text-xs text-gray-700 space-y-1">
+        <div><strong class="text-gray-900">Source Episode:</strong> <span id="solutionEpisode" class="text-gray-800">--</span></div>
+        <div><strong class="text-gray-900">Scripture Reference:</strong> <span id="solutionScripture" class="text-gray-800 font-medium">--</span></div>
       </div>
 
       <!-- Multi-Row Feedback Widget -->
@@ -162,6 +169,8 @@
       isRevealed = true;
 
       document.getElementById('solutionAnswer').innerText = q.answer;
+      document.getElementById('solutionEpisode').innerText = `Episode ${q.episode}`;
+      document.getElementById('solutionScripture').innerText = q.scriptureRef || "N/A";
 
       document.getElementById('revealSection').classList.add('hidden');
       document.getElementById('solutionView').classList.remove('hidden');
