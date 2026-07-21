@@ -1,4 +1,4 @@
 {
-  "summary":  "Ultra-clean Son of Man trivia web application without any episode or series filter dropdowns.",
-  "updatedAt":  "2026-07-21T04:43:46.303515185Z"
+  "summary":  "Updated index.html with automatic deck randomization on load and cache-busting timestamp for fetching data/questions.json.",
+  "updatedAt":  "2026-07-21T04:44:58.767072529Z"
 }
