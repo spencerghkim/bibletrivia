@@ -52,7 +52,7 @@
         <div>
           <strong class="text-gray-900">Source Episode:</strong> 
           <a id="solutionEpisodeLink" href="#" target="_blank" class="text-blue-600 font-semibold underline hover:text-blue-800 ml-1">
-            Episode -- ↗
+            Son of Man Episode -- ↗
           </a>
         </div>
         
@@ -195,9 +195,10 @@
 
       document.getElementById('solutionAnswer').innerText = q.answer;
       
-      // BP Podcast Transcript Link
+      // BP Podcast Transcript Link with Series Name
       const epLink = document.getElementById('solutionEpisodeLink');
-      epLink.innerText = `Episode ${q.episode} ↗`;
+      const seriesName = q.series || 'Son of Man';
+      epLink.innerText = `${seriesName} Episode ${q.episode} ↗`;
       epLink.href = q.podcastUrl || `https://bibleproject.com/podcasts/series/son-of-man-series/`;
 
       renderScriptureBadges(q);
