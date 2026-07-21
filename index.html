@@ -246,12 +246,12 @@
         btn.id = `refBadge_${idx}`;
         btn.className = 'px-2 py-0.5 text-xs font-semibold rounded border bg-white border-blue-300 text-blue-600 hover:bg-blue-50 focus:outline-none transition';
         btn.innerHTML = `${item.ref} 📖`;
-        btn.onclick = () => toggleRefQuote(idx, item.ref, item.quote, item.bibleGatewayUrl);
+        btn.onclick = () => toggleRefQuote(idx, item.ref, item.quote, item.bibleGatewayUrl, item.linkText);
         container.appendChild(btn);
       });
     }
 
-    function toggleRefQuote(idx, refName, quoteText, bgUrl) {
+    function toggleRefQuote(idx, refName, quoteText, bgUrl, linkLabel) {
       const quoteBox = document.getElementById('verseQuoteContainer');
       const titleEl = document.getElementById('verseQuoteTitle');
       const textEl = document.getElementById('verseQuoteText');
@@ -275,6 +275,7 @@
         titleEl.innerText = refName;
         textEl.innerText = `"${quoteText}"`;
         bgLink.href = bgUrl || `https://www.biblegateway.com/passage/?search=${encodeURIComponent(refName)}&version=NKJV`;
+        bgLink.innerText = linkLabel || 'Open in BibleGateway (NKJV) ↗';
         
         quoteBox.classList.remove('hidden');
       }
