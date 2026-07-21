@@ -1,4 +1,4 @@
 {
-  "summary":  "Fixed JS ternary syntax error on line 322 of index.html that caused the page to get stuck on Loading...",
-  "updatedAt":  "2026-07-21T05:49:53.676711744Z"
+  "summary":  "Added Randomize button in navigation bar, kept initial question deck un-randomized (sequential 1 to 96).",
+  "updatedAt":  "2026-07-21T05:51:11.174940799Z"
 }

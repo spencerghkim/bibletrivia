@@ -117,12 +117,16 @@
     </div>
 
     <!-- Navigation Controls -->
-    <div class="flex justify-between items-center pt-2 border-t border-gray-100 mt-1">
+    <div class="flex justify-between items-center pt-2 border-t border-gray-100 mt-1 gap-1.5">
       <button onclick="prevQuestion()" class="px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg active:bg-gray-100">
         Previous
       </button>
 
-      <button onclick="nextQuestion()" class="px-4 py-1.5 text-xs font-medium text-white bg-blue-600 active:bg-blue-700 rounded-lg">
+      <button onclick="randomizeDeck()" class="px-2.5 py-1.5 text-xs font-medium text-purple-700 bg-purple-50 border border-purple-300 hover:bg-purple-100 rounded-lg active:bg-purple-200 transition">
+        🔀 Randomize
+      </button>
+
+      <button onclick="nextQuestion()" class="px-3 py-1.5 text-xs font-medium text-white bg-blue-600 active:bg-blue-700 rounded-lg">
         Next Question
       </button>
     </div>
@@ -151,9 +155,7 @@
         const res = await fetch('data/questions.json?v=' + Date.now());
         allQuestions = await res.json();
         
-        // Randomize questions deck order
-        shuffleArray(allQuestions);
-
+        // Initial list is sequential (un-randomized)
         renderQuestion();
       } catch (err) {
         console.error(err);
@@ -166,6 +168,13 @@
         const j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
       }
+    }
+
+    function randomizeDeck() {
+      if (allQuestions.length === 0) return;
+      shuffleArray(allQuestions);
+      currentIndex = 0;
+      renderQuestion();
     }
 
     function renderQuestion() {
