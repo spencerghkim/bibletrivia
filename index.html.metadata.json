@@ -1,4 +1,4 @@
 {
-  "summary":  "Updated feedback submission in index.html to use URLSearchParams with no-cors for robust Google Apps Script e.parameter mapping.",
-  "updatedAt":  "2026-07-21T05:01:05.379038253Z"
+  "summary":  "Updated index.html with the verified public Google Apps Script Web App URL.",
+  "updatedAt":  "2026-07-21T05:09:55.415569613Z"
 }
